@@ -1,0 +1,5350 @@
+{
+  "id": "42f2e4eb-bd36-4037-837b-69ad6261fc8a",
+  "title": "YouTube - QoiqFrdGpAA",
+  "status": "setup",
+  "source": {
+    "type": "youtube",
+    "youtubeUrl": "https://www.youtube.com/watch?v=QoiqFrdGpAA",
+    "videoId": "QoiqFrdGpAA"
+  },
+  "transcript": [
+    {
+      "id": 0,
+      "startMs": 240,
+      "endMs": 4640,
+      "text": "Pensa comigo, você montou o seu front"
+    },
+    {
+      "id": 1,
+      "startMs": 1959,
+      "endMs": 6799,
+      "text": "end todo bonitinho ali com react, você"
+    },
+    {
+      "id": 2,
+      "startMs": 4640,
+      "endMs": 8440,
+      "text": "fez o seu back end com node, uma pessoa"
+    },
+    {
+      "id": 3,
+      "startMs": 6799,
+      "endMs": 10440,
+      "text": "full stack, né? Tá tudo em type script,"
+    },
+    {
+      "id": 4,
+      "startMs": 8440,
+      "endMs": 11639,
+      "text": "bonito. Vem o desafio do seu chefe ou do"
+    },
+    {
+      "id": 5,
+      "startMs": 10440,
+      "endMs": 13360,
+      "text": "seu cliente, ele fala assim: \"Olha, a"
+    },
+    {
+      "id": 6,
+      "startMs": 11639,
+      "endMs": 14960,
+      "text": "gente precisa agora ter agentes de"
+    },
+    {
+      "id": 7,
+      "startMs": 13360,
+      "endMs": 17560,
+      "text": "trabalhando no nosso projeto. Tem que"
+    },
+    {
+      "id": 8,
+      "startMs": 14960,
+      "endMs": 18960,
+      "text": "ter várias vários steps, tem que ter"
+    },
+    {
+      "id": 9,
+      "startMs": 17560,
+      "endMs": 20279,
+      "text": "trabalho com memória, com rag, você"
+    },
+    {
+      "id": 10,
+      "startMs": 18960,
+      "endMs": 21680,
+      "text": "precisa fazer workflows. Aí você vai"
+    },
+    {
+      "id": 11,
+      "startMs": 20279,
+      "endMs": 23279,
+      "text": "pesquisar e fala assim: \"Tá, eu vou"
+    },
+    {
+      "id": 12,
+      "startMs": 21680,
+      "endMs": 24720,
+      "text": "subir uns microsserviços aqui em Python,"
+    },
+    {
+      "id": 13,
+      "startMs": 23279,
+      "endMs": 26480,
+      "text": "vou usar [música] um Cre AI, vou usar um"
+    },
+    {
+      "id": 14,
+      "startMs": 24720,
+      "endMs": 28000,
+      "text": "L chain, etc. Mas você não precisa"
+    },
+    {
+      "id": 15,
+      "startMs": 26480,
+      "endMs": 29439,
+      "text": "disso, porque senão começa a virar um"
+    },
+    {
+      "id": 16,
+      "startMs": 28000,
+      "endMs": 31359,
+      "text": "monstro, né, de sete cabeças, um"
+    },
+    {
+      "id": 17,
+      "startMs": 29439,
+      "endMs": 33520,
+      "text": "bichinho e você não vai querer isso. O"
+    },
+    {
+      "id": 18,
+      "startMs": 31359,
+      "endMs": 35239,
+      "text": "Benja Flintston falou aqui: \"Maão faz"
+    },
+    {
+      "id": 19,
+      "startMs": 33520,
+      "endMs": 36680,
+      "text": "uma live criando um projeto pequeno"
+    },
+    {
+      "id": 20,
+      "startMs": 35239,
+      "endMs": 38079,
+      "text": "utilizando alguns elementos da sua"
+    },
+    {
+      "id": 21,
+      "startMs": 36680,
+      "endMs": 39559,
+      "text": "[música] stack\". Não é uma live, mas eu"
+    },
+    {
+      "id": 22,
+      "startMs": 38079,
+      "endMs": 40840,
+      "text": "vou usar um dos elementos que eu mostrei"
+    },
+    {
+      "id": 23,
+      "startMs": 39559,
+      "endMs": 42200,
+      "text": "para você da stack aqui, inclusive."
+    },
+    {
+      "id": 24,
+      "startMs": 40840,
+      "endMs": 43320,
+      "text": "Deixa eu deixa eu ver aqui e responder"
+    },
+    {
+      "id": 25,
+      "startMs": 42200,
+      "endMs": 44480,
+      "text": "rapidinho. Deus é contigo, ó. Qual"
+    },
+    {
+      "id": 26,
+      "startMs": 43320,
+      "endMs": 45760,
+      "text": "formação engloba tudo isso para"
+    },
+    {
+      "id": 27,
+      "startMs": 44480,
+      "endMs": 46520,
+      "text": "aprender? Então,"
+    },
+    {
+      "id": 28,
+      "startMs": 45760,
+      "endMs": 49280,
+      "text": ">> Rocket City One."
+    },
+    {
+      "id": 29,
+      "startMs": 46520,
+      "endMs": 50680,
+      "text": ">> Olha só, Mastra AI. O Masterra AI foi o"
+    },
+    {
+      "id": 30,
+      "startMs": 49280,
+      "endMs": 52399,
+      "text": "momento que eu mostrei nesse vídeo aqui,"
+    },
+    {
+      "id": 31,
+      "startMs": 50680,
+      "endMs": 54879,
+      "text": "minha stack completa para criar projetos"
+    },
+    {
+      "id": 32,
+      "startMs": 52399,
+      "endMs": 56440,
+      "text": "por stack em 2026. E é ele que a gente"
+    },
+    {
+      "id": 33,
+      "startMs": 54879,
+      "endMs": 57840,
+      "text": "vai fazer aqui e entender como que ele"
+    },
+    {
+      "id": 34,
+      "startMs": 56440,
+      "endMs": 60079,
+      "text": "vai resolver esse problema que eu"
+    },
+    {
+      "id": 35,
+      "startMs": 57840,
+      "endMs": 63359,
+      "text": "apresentei para você no começo aqui, tá"
+    },
+    {
+      "id": 36,
+      "startMs": 60079,
+      "endMs": 66360,
+      "text": "bem? Então eu vou abrir aqui o Mastra"
+    },
+    {
+      "id": 37,
+      "startMs": 63359,
+      "endMs": 68680,
+      "text": "AI. A gente vai começar a conversar em"
+    },
+    {
+      "id": 38,
+      "startMs": 66360,
+      "endMs": 70720,
+      "text": "cima dele. Ele é feito para construir"
+    },
+    {
+      "id": 39,
+      "startMs": 68680,
+      "endMs": 72640,
+      "text": "agentes com Typecript. Então você vai"
+    },
+    {
+      "id": 40,
+      "startMs": 70720,
+      "endMs": 75240,
+      "text": "manter o seu projeto todo tipado, todo"
+    },
+    {
+      "id": 41,
+      "startMs": 72640,
+      "endMs": 77320,
+      "text": "bonitinho. Você não está indo além do"
+    },
+    {
+      "id": 42,
+      "startMs": 75240,
+      "endMs": 79520,
+      "text": "que precisa. A gente tá trazendo esse"
+    },
+    {
+      "id": 43,
+      "startMs": 77320,
+      "endMs": 82799,
+      "text": "framework para ficar dentro do que você"
+    },
+    {
+      "id": 44,
+      "startMs": 79520,
+      "endMs": 84360,
+      "text": "já conhece. Assim como os ORMs chegam"
+    },
+    {
+      "id": 45,
+      "startMs": 82799,
+      "endMs": 86079,
+      "text": "para que você possa fazer mais"
+    },
+    {
+      "id": 46,
+      "startMs": 84360,
+      "endMs": 88400,
+      "text": "JavaScript possível as coisas, ter o"
+    },
+    {
+      "id": 47,
+      "startMs": 86079,
+      "endMs": 90360,
+      "text": "tipo e tudo mais, a ideia desse carinha"
+    },
+    {
+      "id": 48,
+      "startMs": 88400,
+      "endMs": 92399,
+      "text": "aqui é isso também. Você vai ter os seus"
+    },
+    {
+      "id": 49,
+      "startMs": 90360,
+      "endMs": 94159,
+      "text": "agentes, você vai trabalhar com vários"
+    },
+    {
+      "id": 50,
+      "startMs": 92399,
+      "endMs": 95640,
+      "text": "conceitos de inteligência artificial,"
+    },
+    {
+      "id": 51,
+      "startMs": 94159,
+      "endMs": 97759,
+      "text": "tudo dentro do seu ambiente, do jeito"
+    },
+    {
+      "id": 52,
+      "startMs": 95640,
+      "endMs": 99360,
+      "text": "que você já tá acostumado, tá bem? Quem"
+    },
+    {
+      "id": 53,
+      "startMs": 97759,
+      "endMs": 100880,
+      "text": "foi que criou isso daqui? Por que"
+    },
+    {
+      "id": 54,
+      "startMs": 99360,
+      "endMs": 102320,
+      "text": "existe, né? Qual que é o problema que"
+    },
+    {
+      "id": 55,
+      "startMs": 100880,
+      "endMs": 103759,
+      "text": "ele de fato tá resolvendo o problema? Já"
+    },
+    {
+      "id": 56,
+      "startMs": 102320,
+      "endMs": 105560,
+      "text": "apresentei aqui para você, mas aqui foi"
+    },
+    {
+      "id": 57,
+      "startMs": 103759,
+      "endMs": 106880,
+      "text": "criado pela galera que já trabalhou no"
+    },
+    {
+      "id": 58,
+      "startMs": 105560,
+      "endMs": 110119,
+      "text": "Gatsby. Eu não sei se você vai lembrar"
+    },
+    {
+      "id": 59,
+      "startMs": 106880,
+      "endMs": 112840,
+      "text": "do Gatsby JS. Se você precisasse fazer"
+    },
+    {
+      "id": 60,
+      "startMs": 110119,
+      "endMs": 114759,
+      "text": "um site, um server side rendering, o"
+    },
+    {
+      "id": 61,
+      "startMs": 112840,
+      "endMs": 116560,
+      "text": "Getsp ele era um framework lá nos nos"
+    },
+    {
+      "id": 62,
+      "startMs": 114759,
+      "endMs": 118320,
+      "text": "princípios do do React, né, que ele"
+    },
+    {
+      "id": 63,
+      "startMs": 116560,
+      "endMs": 122960,
+      "text": "resolvia esse problema. E aí, claro,"
+    },
+    {
+      "id": 64,
+      "startMs": 118320,
+      "endMs": 125399,
+      "text": "depois acabou o no, o next ganhando mais"
+    },
+    {
+      "id": 65,
+      "startMs": 122960,
+      "endMs": 126600,
+      "text": "visibilidade. Mas o Getsby pr galera,"
+    },
+    {
+      "id": 66,
+      "startMs": 125399,
+      "endMs": 128319,
+      "text": "inscreve aí se você é da época do"
+    },
+    {
+      "id": 67,
+      "startMs": 126600,
+      "endMs": 130479,
+      "text": "Gatsby, cara, ele resolvia muito e"
+    },
+    {
+      "id": 68,
+      "startMs": 128319,
+      "endMs": 132520,
+      "text": "resolvia muito bem. A ideia aqui do"
+    },
+    {
+      "id": 69,
+      "startMs": 130479,
+      "endMs": 135560,
+      "text": "Mastra feito por essa galera também é"
+    },
+    {
+      "id": 70,
+      "startMs": 132520,
+      "endMs": 137160,
+      "text": "simplificar, né, ter um developer"
+    },
+    {
+      "id": 71,
+      "startMs": 135560,
+      "endMs": 138280,
+      "text": "experience. Então que você tá"
+    },
+    {
+      "id": 72,
+      "startMs": 137160,
+      "endMs": 140160,
+      "text": "trabalhando na experiência do"
+    },
+    {
+      "id": 73,
+      "startMs": 138280,
+      "endMs": 142480,
+      "text": "desenvolvedor. Mike, eu queria usar o AI"
+    },
+    {
+      "id": 74,
+      "startMs": 140160,
+      "endMs": 146519,
+      "text": "SDK da Versel. Não, não daria para fazer"
+    },
+    {
+      "id": 75,
+      "startMs": 142480,
+      "endMs": 148160,
+      "text": "isso. Daria Versal ã AI SDK. OK. Tá, faz"
+    },
+    {
+      "id": 76,
+      "startMs": 146519,
+      "endMs": 150599,
+      "text": "parte do meu kit também, eu falei lá no"
+    },
+    {
+      "id": 77,
+      "startMs": 148160,
+      "endMs": 152000,
+      "text": "no vídeo. Só que depende, né? Porque se"
+    },
+    {
+      "id": 78,
+      "startMs": 150599,
+      "endMs": 153800,
+      "text": "você tá indo para algumas coisas que"
+    },
+    {
+      "id": 79,
+      "startMs": 152000,
+      "endMs": 156319,
+      "text": "estão ficando mais complicadas,"
+    },
+    {
+      "id": 80,
+      "startMs": 153800,
+      "endMs": 158680,
+      "text": "complexas de se orquestrar, eu preciso"
+    },
+    {
+      "id": 81,
+      "startMs": 156319,
+      "endMs": 160200,
+      "text": "fazer um workflow, trabalhar com os web"
+    },
+    {
+      "id": 82,
+      "startMs": 158680,
+      "endMs": 161840,
+      "text": "hooks, né, os workflows. Eu preciso"
+    },
+    {
+      "id": 83,
+      "startMs": 160200,
+      "endMs": 164800,
+      "text": "fazer rags, eu preciso trabalhar com a"
+    },
+    {
+      "id": 84,
+      "startMs": 161840,
+      "endMs": 167879,
+      "text": "memória, eu preciso fazer toda essa"
+    },
+    {
+      "id": 85,
+      "startMs": 164800,
+      "endMs": 170040,
+      "text": "ideia de MCP. de ferramentas. Tudo isso"
+    },
+    {
+      "id": 86,
+      "startMs": 167879,
+      "endMs": 171760,
+      "text": "dentro da do ambiente do Mastra, ele é"
+    },
+    {
+      "id": 87,
+      "startMs": 170040,
+      "endMs": 173480,
+      "text": "simplificado. Então ele tem uma"
+    },
+    {
+      "id": 88,
+      "startMs": 171760,
+      "endMs": 175599,
+      "text": "experiência de usuário mais gostosinha,"
+    },
+    {
+      "id": 89,
+      "startMs": 173480,
+      "endMs": 176760,
+      "text": "precisa fazer guard rails, precisa fazer"
+    },
+    {
+      "id": 90,
+      "startMs": 175599,
+      "endMs": 178680,
+      "text": "tantas coisas que a inteligência"
+    },
+    {
+      "id": 91,
+      "startMs": 176760,
+      "endMs": 181360,
+      "text": "artificial traz para você, como"
+    },
+    {
+      "id": 92,
+      "startMs": 178680,
+      "endMs": 183760,
+      "text": "agêntica, né? Inteligente, uma"
+    },
+    {
+      "id": 93,
+      "startMs": 181360,
+      "endMs": 185959,
+      "text": "inteligência agêntica, você vai"
+    },
+    {
+      "id": 94,
+      "startMs": 183760,
+      "endMs": 188200,
+      "text": "conseguir com essa ferramenta, porque o"
+    },
+    {
+      "id": 95,
+      "startMs": 185959,
+      "endMs": 190159,
+      "text": "o foco dela é facilitar para você a"
+    },
+    {
+      "id": 96,
+      "startMs": 188200,
+      "endMs": 193319,
+      "text": "experiência do desenvolvedor. Tudo bem?"
+    },
+    {
+      "id": 97,
+      "startMs": 190159,
+      "endMs": 195319,
+      "text": "Ó, já entendemos então quem foi que fez."
+    },
+    {
+      "id": 98,
+      "startMs": 193319,
+      "endMs": 198159,
+      "text": "Agora respondendo algumas perguntas, né?"
+    },
+    {
+      "id": 99,
+      "startMs": 195319,
+      "endMs": 200120,
+      "text": "Maicão, é isso aqui eu posso trocar todo"
+    },
+    {
+      "id": 100,
+      "startMs": 198159,
+      "endMs": 202159,
+      "text": "o meu back end que eu já faço em Python,"
+    },
+    {
+      "id": 101,
+      "startMs": 200120,
+      "endMs": 204319,
+      "text": "já faço creer e já uso L chain, não faz"
+    },
+    {
+      "id": 102,
+      "startMs": 202159,
+      "endMs": 205760,
+      "text": "sentido, né pessoal? Não, Mike, eu devo"
+    },
+    {
+      "id": 103,
+      "startMs": 204319,
+      "endMs": 207519,
+      "text": "colocar isso daqui na minha empresa. Eu"
+    },
+    {
+      "id": 104,
+      "startMs": 205760,
+      "endMs": 209760,
+      "text": "trabalho numa global, numa"
+    },
+    {
+      "id": 105,
+      "startMs": 207519,
+      "endMs": 210840,
+      "text": "multinacional. Eu vou levar e vou fazer,"
+    },
+    {
+      "id": 106,
+      "startMs": 209760,
+      "endMs": 212519,
+      "text": "vou trocar tudo que eu já tenho"
+    },
+    {
+      "id": 107,
+      "startMs": 210840,
+      "endMs": 214200,
+      "text": "funcionando lá com a IA SDK e trazer"
+    },
+    {
+      "id": 108,
+      "startMs": 212519,
+      "endMs": 216080,
+      "text": "isso daqui? Não, né, pessoal? Óbvio que"
+    },
+    {
+      "id": 109,
+      "startMs": 214200,
+      "endMs": 217159,
+      "text": "não. Para que que você tá aprendendo"
+    },
+    {
+      "id": 110,
+      "startMs": 216080,
+      "endMs": 218720,
+      "text": "isso aqui? Então, você tá aprendendo"
+    },
+    {
+      "id": 111,
+      "startMs": 217159,
+      "endMs": 221280,
+      "text": "para você tomar decisões. Você é um tech"
+    },
+    {
+      "id": 112,
+      "startMs": 218720,
+      "endMs": 224000,
+      "text": "lead? Você quer levar isso pro seu tech?"
+    },
+    {
+      "id": 113,
+      "startMs": 221280,
+      "endMs": 225799,
+      "text": "Quais são os argumentos e o teste que"
+    },
+    {
+      "id": 114,
+      "startMs": 224000,
+      "endMs": 227480,
+      "text": "você vai fazer para verificar se isso"
+    },
+    {
+      "id": 115,
+      "startMs": 225799,
+      "endMs": 229560,
+      "text": "faz sentido para você. É uma ferramenta"
+    },
+    {
+      "id": 116,
+      "startMs": 227480,
+      "endMs": 231720,
+      "text": "nova, 2024 que ela veio. Então você"
+    },
+    {
+      "id": 117,
+      "startMs": 229560,
+      "endMs": 234360,
+      "text": "precisa entender que precisa ter uma"
+    },
+    {
+      "id": 118,
+      "startMs": 231720,
+      "endMs": 236280,
+      "text": "adoção forte pela comunidade. É, é uma"
+    },
+    {
+      "id": 119,
+      "startMs": 234360,
+      "endMs": 238400,
+      "text": "uma ferramenta que acabou de sair na sua"
+    },
+    {
+      "id": 120,
+      "startMs": 236280,
+      "endMs": 239680,
+      "text": "versão 1.0 e por isso eu tô trazendo ela"
+    },
+    {
+      "id": 121,
+      "startMs": 238400,
+      "endMs": 242079,
+      "text": "agora para você. Eu demorei até para"
+    },
+    {
+      "id": 122,
+      "startMs": 239680,
+      "endMs": 244079,
+      "text": "trazer porque eu queria entender se ela"
+    },
+    {
+      "id": 123,
+      "startMs": 242079,
+      "endMs": 245280,
+      "text": "tá se estabilizando por enquanto. Sim."
+    },
+    {
+      "id": 124,
+      "startMs": 244079,
+      "endMs": 247400,
+      "text": "Então faz sentido eu trazer para que"
+    },
+    {
+      "id": 125,
+      "startMs": 245280,
+      "endMs": 249439,
+      "text": "você possa entender um pouquinho mais."
+    },
+    {
+      "id": 126,
+      "startMs": 247400,
+      "endMs": 251799,
+      "text": "Ó, é uma ferramenta que ela vai trazer"
+    },
+    {
+      "id": 127,
+      "startMs": 249439,
+      "endMs": 253480,
+      "text": "para você diversos cenários para você já"
+    },
+    {
+      "id": 128,
+      "startMs": 251799,
+      "endMs": 255480,
+      "text": "entender como que ela funciona. Então,"
+    },
+    {
+      "id": 129,
+      "startMs": 253480,
+      "endMs": 256720,
+      "text": "após esse vídeo aqui, após esses"
+    },
+    {
+      "id": 130,
+      "startMs": 255480,
+      "endMs": 258199,
+      "text": "primeiros passos que nós vamos fazer"
+    },
+    {
+      "id": 131,
+      "startMs": 256720,
+      "endMs": 260280,
+      "text": "juntos, dá uma olhadinha como que"
+    },
+    {
+      "id": 132,
+      "startMs": 258199,
+      "endMs": 261880,
+      "text": "funciona, por exemplo, o code agent,"
+    },
+    {
+      "id": 133,
+      "startMs": 260280,
+      "endMs": 263240,
+      "text": "como que ele se como que ele se"
+    },
+    {
+      "id": 134,
+      "startMs": 261880,
+      "endMs": 265560,
+      "text": "comunica, como que ele cria todo o"
+    },
+    {
+      "id": 135,
+      "startMs": 263240,
+      "endMs": 267880,
+      "text": "workflow, como que ele vai usar o ITB lá"
+    },
+    {
+      "id": 136,
+      "startMs": 265560,
+      "endMs": 270759,
+      "text": "para fazer é todo o seu sandbox, como"
+    },
+    {
+      "id": 137,
+      "startMs": 267880,
+      "endMs": 272560,
+      "text": "que ele funciona. É, é quase como o"
+    },
+    {
+      "id": 138,
+      "startMs": 270759,
+      "endMs": 273720,
+      "text": "Lovable funciona por debaixo dos panos."
+    },
+    {
+      "id": 139,
+      "startMs": 272560,
+      "endMs": 275440,
+      "text": "Dá uma olhada nele, eu acho que você vai"
+    },
+    {
+      "id": 140,
+      "startMs": 273720,
+      "endMs": 276759,
+      "text": "gostar bastante. Um deeper research. A"
+    },
+    {
+      "id": 141,
+      "startMs": 275440,
+      "endMs": 277759,
+      "text": "gente vai fazer algo mais leve aqui, só"
+    },
+    {
+      "id": 142,
+      "startMs": 276759,
+      "endMs": 279440,
+      "text": "para você entender como que a"
+    },
+    {
+      "id": 143,
+      "startMs": 277759,
+      "endMs": 281680,
+      "text": "inteligência artificial vai passar desse"
+    },
+    {
+      "id": 144,
+      "startMs": 279440,
+      "endMs": 284160,
+      "text": "desse nesse momento de estudo e de"
+    },
+    {
+      "id": 145,
+      "startMs": 281680,
+      "endMs": 285720,
+      "text": "aprendizado de um de um framework novo"
+    },
+    {
+      "id": 146,
+      "startMs": 284160,
+      "endMs": 288199,
+      "text": "na tua vida. É basicamente isso que a"
+    },
+    {
+      "id": 147,
+      "startMs": 285720,
+      "endMs": 290199,
+      "text": "gente vai fazer, tá bem? Mas pode pegar"
+    },
+    {
+      "id": 148,
+      "startMs": 288199,
+      "endMs": 292320,
+      "text": "isso daqui depois. E também eu já vou"
+    },
+    {
+      "id": 149,
+      "startMs": 290199,
+      "endMs": 293520,
+      "text": "falar agora, se você quiser, ah, já"
+    },
+    {
+      "id": 150,
+      "startMs": 292320,
+      "endMs": 295360,
+      "text": "entendi um pouquinho o que é, eu vou"
+    },
+    {
+      "id": 151,
+      "startMs": 293520,
+      "endMs": 297720,
+      "text": "fazer, vou estudar aqui por partes."
+    },
+    {
+      "id": 152,
+      "startMs": 295360,
+      "endMs": 300360,
+      "text": "Cara, estuda esse princípios de"
+    },
+    {
+      "id": 153,
+      "startMs": 297720,
+      "endMs": 301960,
+      "text": "construção de agentes de EAI agents, que"
+    },
+    {
+      "id": 154,
+      "startMs": 300360,
+      "endMs": 304400,
+      "text": "eles, o pessoal da Master construiu"
+    },
+    {
+      "id": 155,
+      "startMs": 301960,
+      "endMs": 308160,
+      "text": "aqui. É um livro que vai falar de vários"
+    },
+    {
+      "id": 156,
+      "startMs": 304400,
+      "endMs": 310000,
+      "text": "termos do Daisy Rag, MCP, Guard Rails."
+    },
+    {
+      "id": 157,
+      "startMs": 308160,
+      "endMs": 311759,
+      "text": "Ele vai trazer toda a ideia de tools de"
+    },
+    {
+      "id": 158,
+      "startMs": 310000,
+      "endMs": 313960,
+      "text": "agente, como que funciona, quais são,"
+    },
+    {
+      "id": 159,
+      "startMs": 311759,
+      "endMs": 316520,
+      "text": "desde o fundamentozinho, tá? Ll. Que que"
+    },
+    {
+      "id": 160,
+      "startMs": 313960,
+      "endMs": 318759,
+      "text": "é LLM? Por que é o prompt? Porque desde"
+    },
+    {
+      "id": 161,
+      "startMs": 316520,
+      "endMs": 320800,
+      "text": "lá do comecinho só que é um livro e às"
+    },
+    {
+      "id": 162,
+      "startMs": 318759,
+      "endMs": 322280,
+      "text": "vezes você vai gostar de ler. E olha só,"
+    },
+    {
+      "id": 163,
+      "startMs": 320800,
+      "endMs": 323680,
+      "text": "não é nem um vídeo patrocinado nem nada,"
+    },
+    {
+      "id": 164,
+      "startMs": 322280,
+      "endMs": 325160,
+      "text": "mas eu tô fazendo uma baita propaganda"
+    },
+    {
+      "id": 165,
+      "startMs": 323680,
+      "endMs": 326520,
+      "text": "para eles, né? Quer patrocinar nós,"
+    },
+    {
+      "id": 166,
+      "startMs": 325160,
+      "endMs": 328560,
+      "text": "mastera, fala aqui, fala aqui com a"
+    },
+    {
+      "id": 167,
+      "startMs": 326520,
+      "endMs": 329639,
+      "text": "gente. Bom, vamos lá. Vamos entender"
+    },
+    {
+      "id": 168,
+      "startMs": 328560,
+      "endMs": 331919,
+      "text": "então como que funciona. Uma das coisas"
+    },
+    {
+      "id": 169,
+      "startMs": 329639,
+      "endMs": 334280,
+      "text": "que tem no master, que é muito legal,"
+    },
+    {
+      "id": 170,
+      "startMs": 331919,
+      "endMs": 336720,
+      "text": "essa parte aqui do Masterra CS, eles"
+    },
+    {
+      "id": 171,
+      "startMs": 334280,
+      "endMs": 338120,
+      "text": "fazem um mcpzinho para você, se bem me"
+    },
+    {
+      "id": 172,
+      "startMs": 336720,
+      "endMs": 339720,
+      "text": "lembro, tá? Deixa eu ver aqui, ó. Ele"
+    },
+    {
+      "id": 173,
+      "startMs": 338120,
+      "endMs": 342680,
+      "text": "vai dar uma intro para você. Aí ele vai"
+    },
+    {
+      "id": 174,
+      "startMs": 339720,
+      "endMs": 345639,
+      "text": "ensinar você a instalar o MCP do MAS, se"
+    },
+    {
+      "id": 175,
+      "startMs": 342680,
+      "endMs": 347800,
+      "text": "bem me lembro, tá? E aí você vai ficar"
+    },
+    {
+      "id": 176,
+      "startMs": 345639,
+      "endMs": 350680,
+      "text": "fazendo cada uma dessas etapas do curso"
+    },
+    {
+      "id": 177,
+      "startMs": 347800,
+      "endMs": 352759,
+      "text": "deles tudo via MCP. Você faz uma"
+    },
+    {
+      "id": 178,
+      "startMs": 350680,
+      "endMs": 354400,
+      "text": "pergunta lá pro chat e ele responde para"
+    },
+    {
+      "id": 179,
+      "startMs": 352759,
+      "endMs": 356039,
+      "text": "você. É bem legal. A Mike, como que"
+    },
+    {
+      "id": 180,
+      "startMs": 354400,
+      "endMs": 358840,
+      "text": "funciona a questão de preço e tudo mais?"
+    },
+    {
+      "id": 181,
+      "startMs": 356039,
+      "endMs": 360639,
+      "text": "Cara, é open source, boa parte dela."
+    },
+    {
+      "id": 182,
+      "startMs": 358840,
+      "endMs": 363360,
+      "text": "Você vai poder também usar alguma coisa"
+    },
+    {
+      "id": 183,
+      "startMs": 360639,
+      "endMs": 364680,
+      "text": "que que é da plataforma que eles criaram"
+    },
+    {
+      "id": 184,
+      "startMs": 363360,
+      "endMs": 365720,
+      "text": "a partir do estúdio tal, que a gente vai"
+    },
+    {
+      "id": 185,
+      "startMs": 364680,
+      "endMs": 368080,
+      "text": "dar uma olhadinha ali. Então eles"
+    },
+    {
+      "id": 186,
+      "startMs": 365720,
+      "endMs": 370000,
+      "text": "criaram sim soluções na nuvem, caso você"
+    },
+    {
+      "id": 187,
+      "startMs": 368080,
+      "endMs": 371960,
+      "text": "queira, mas a ideia é que seja gratuito"
+    },
+    {
+      "id": 188,
+      "startMs": 370000,
+      "endMs": 373479,
+      "text": "mesmo, tá? Tem o livro aqui, tá tudo"
+    },
+    {
+      "id": 189,
+      "startMs": 371960,
+      "endMs": 375319,
+      "text": "tudo aqui certinho. Agora vamos pra"
+    },
+    {
+      "id": 190,
+      "startMs": 373479,
+      "endMs": 377199,
+      "text": "documentação. Na documentação a gente"
+    },
+    {
+      "id": 191,
+      "startMs": 375319,
+      "endMs": 378840,
+      "text": "vai entender os princípios fundamentais"
+    },
+    {
+      "id": 192,
+      "startMs": 377199,
+      "endMs": 380599,
+      "text": "do master. Então ele vai ter o agente,"
+    },
+    {
+      "id": 193,
+      "startMs": 378840,
+      "endMs": 382080,
+      "text": "ele vai ter workflow, ele vai ter toda a"
+    },
+    {
+      "id": 194,
+      "startMs": 380599,
+      "endMs": 384599,
+      "text": "ideia de streaming, ele vai ter a ideia"
+    },
+    {
+      "id": 195,
+      "startMs": 382080,
+      "endMs": 386919,
+      "text": "de MCPs se você precisar, memórias,"
+    },
+    {
+      "id": 196,
+      "startMs": 384599,
+      "endMs": 389199,
+      "text": "rags, workspaces. Workspaces, imagina é"
+    },
+    {
+      "id": 197,
+      "startMs": 386919,
+      "endMs": 391080,
+      "text": "algo novo, né? Imagina que você precisa"
+    },
+    {
+      "id": 198,
+      "startMs": 389199,
+      "endMs": 392720,
+      "text": "fazer um ambiente sandbox, que vai poder"
+    },
+    {
+      "id": 199,
+      "startMs": 391080,
+      "endMs": 394000,
+      "text": "deletar arquivo, criar arquivo, fazer um"
+    },
+    {
+      "id": 200,
+      "startMs": 392720,
+      "endMs": 395720,
+      "text": "monte de coisa, tudo autônoma pelo"
+    },
+    {
+      "id": 201,
+      "startMs": 394000,
+      "endMs": 397160,
+      "text": "agente de inteligência artificial, sem"
+    },
+    {
+      "id": 202,
+      "startMs": 395720,
+      "endMs": 399360,
+      "text": "estragar na tua máquina, sem estragar o"
+    },
+    {
+      "id": 203,
+      "startMs": 397160,
+      "endMs": 401000,
+      "text": "seu projeto. Então você vai querer um"
+    },
+    {
+      "id": 204,
+      "startMs": 399360,
+      "endMs": 403560,
+      "text": "workspace, por exemplo, que é para isso"
+    },
+    {
+      "id": 205,
+      "startMs": 401000,
+      "endMs": 404639,
+      "text": "que serve. E tantas outras coisas e já"
+    },
+    {
+      "id": 206,
+      "startMs": 403560,
+      "endMs": 406240,
+      "text": "já é o suficiente, a gente não precisa"
+    },
+    {
+      "id": 207,
+      "startMs": 404639,
+      "endMs": 408039,
+      "text": "mais que isso. Vamos em guides e"
+    },
+    {
+      "id": 208,
+      "startMs": 406240,
+      "endMs": 411360,
+      "text": "migration e a gente já começa o projeto"
+    },
+    {
+      "id": 209,
+      "startMs": 408039,
+      "endMs": 413759,
+      "text": "aqui. Eu vou iniciar o projeto no"
+    },
+    {
+      "id": 210,
+      "startMs": 411360,
+      "endMs": 416759,
+      "text": "terminal. Eu vou iniciar aqui na minha"
+    },
+    {
+      "id": 211,
+      "startMs": 413759,
+      "endMs": 419039,
+      "text": "pasta developer 02. Eu vou fazer um"
+    },
+    {
+      "id": 212,
+      "startMs": 416759,
+      "endMs": 421199,
+      "text": "diretório, vou já colocar direto BNEX"
+    },
+    {
+      "id": 213,
+      "startMs": 419039,
+      "endMs": 423280,
+      "text": "create Mastra, tá? Isso aqui vai tá"
+    },
+    {
+      "id": 214,
+      "startMs": 421199,
+      "endMs": 425879,
+      "text": "nessa parte do quick start. Você pode"
+    },
+    {
+      "id": 215,
+      "startMs": 423280,
+      "endMs": 427560,
+      "text": "usar com ban, PNPM, o que você quiser"
+    },
+    {
+      "id": 216,
+      "startMs": 425879,
+      "endMs": 430000,
+      "text": "melhor. Ele já fala aqui que ele cria"
+    },
+    {
+      "id": 217,
+      "startMs": 427560,
+      "endMs": 432280,
+      "text": "para você uma ideia com os weather"
+    },
+    {
+      "id": 218,
+      "startMs": 430000,
+      "endMs": 433199,
+      "text": "agents, né? Os agentes de tempo de mas"
+    },
+    {
+      "id": 219,
+      "startMs": 432280,
+      "endMs": 435759,
+      "text": "não é muito que a gente vai querer"
+    },
+    {
+      "id": 220,
+      "startMs": 433199,
+      "endMs": 436840,
+      "text": "agora. Vou colocar aqui Mastra YouTube."
+    },
+    {
+      "id": 221,
+      "startMs": 435759,
+      "endMs": 438720,
+      "text": "Vamos entender o que que ele tá fazendo"
+    },
+    {
+      "id": 222,
+      "startMs": 436840,
+      "endMs": 440080,
+      "text": "aqui. Sece pode ser qual que é a"
+    },
+    {
+      "id": 223,
+      "startMs": 438720,
+      "endMs": 443000,
+      "text": "inteligência artificial que eu vou usar."
+    },
+    {
+      "id": 224,
+      "startMs": 440080,
+      "endMs": 445479,
+      "text": "É a Google. Eu vou entrar a IPI depois"
+    },
+    {
+      "id": 225,
+      "startMs": 443000,
+      "endMs": 447199,
+      "text": "eu vou deixar skip fornal pra não vazar"
+    },
+    {
+      "id": 226,
+      "startMs": 445479,
+      "endMs": 449520,
+      "text": "minha IPI key, tá? Deixa eu aumentar um"
+    },
+    {
+      "id": 227,
+      "startMs": 447199,
+      "endMs": 451440,
+      "text": "pouquinho mais aqui. Vou pedir que ele"
+    },
+    {
+      "id": 228,
+      "startMs": 449520,
+      "endMs": 453520,
+      "text": "coloque as skills ali, mas eu não quero"
+    },
+    {
+      "id": 229,
+      "startMs": 451440,
+      "endMs": 455919,
+      "text": "cloud code nem cursor, eu quero o"
+    },
+    {
+      "id": 230,
+      "startMs": 453520,
+      "endMs": 457440,
+      "text": "Gemini, que é o que eu uso. Não uso"
+    },
+    {
+      "id": 231,
+      "startMs": 455919,
+      "endMs": 459240,
+      "text": "cloud code, não uso cursor. A gente pode"
+    },
+    {
+      "id": 232,
+      "startMs": 457440,
+      "endMs": 461800,
+      "text": "conversar melhor sobre isso depois, não"
+    },
+    {
+      "id": 233,
+      "startMs": 459240,
+      "endMs": 464240,
+      "text": "acho necessário, mas se você acha, tá"
+    },
+    {
+      "id": 234,
+      "startMs": 461800,
+      "endMs": 466479,
+      "text": "tudo bem. Ó, você pode usar no seu"
+    },
+    {
+      "id": 235,
+      "startMs": 464240,
+      "endMs": 469479,
+      "text": "projeto Next, no seu projeto Astro, no"
+    },
+    {
+      "id": 236,
+      "startMs": 466479,
+      "endMs": 471919,
+      "text": "seu projeto Svelt, no seu Express Zone,"
+    },
+    {
+      "id": 237,
+      "startMs": 469479,
+      "endMs": 473360,
+      "text": "no Electron e tantos outros lugares."
+    },
+    {
+      "id": 238,
+      "startMs": 471919,
+      "endMs": 474520,
+      "text": "Então é só adicionar o seu projeto se"
+    },
+    {
+      "id": 239,
+      "startMs": 473360,
+      "endMs": 476440,
+      "text": "você quiser. A gente tá iniciando um"
+    },
+    {
+      "id": 240,
+      "startMs": 474520,
+      "endMs": 479000,
+      "text": "projeto do zerinho, né? Mas é bem"
+    },
+    {
+      "id": 241,
+      "startMs": 476440,
+      "endMs": 482120,
+      "text": "simples de funcionar. Mostra YouTube. Eu"
+    },
+    {
+      "id": 242,
+      "startMs": 479000,
+      "endMs": 485520,
+      "text": "preciso entrar aqui, tá bem?"
+    },
+    {
+      "id": 243,
+      "startMs": 482120,
+      "endMs": 487319,
+      "text": "E depois um ban run ou ban dev, ele já"
+    },
+    {
+      "id": 244,
+      "startMs": 485520,
+      "endMs": 488560,
+      "text": "vai resolver para mim. Ao fazer isso, o"
+    },
+    {
+      "id": 245,
+      "startMs": 487319,
+      "endMs": 490479,
+      "text": "que que a gente já vai ter antes de"
+    },
+    {
+      "id": 246,
+      "startMs": 488560,
+      "endMs": 492919,
+      "text": "entrar no código? Deixa eu dar uma olhad"
+    },
+    {
+      "id": 247,
+      "startMs": 490479,
+      "endMs": 495280,
+      "text": "olhadinha aqui com você. Nesse local a"
+    },
+    {
+      "id": 248,
+      "startMs": 492919,
+      "endMs": 496720,
+      "text": "gente vai ter o Mra Studio. O que é esse"
+    },
+    {
+      "id": 249,
+      "startMs": 495280,
+      "endMs": 499240,
+      "text": "Masterra Studio? A ideia do Masterra"
+    },
+    {
+      "id": 250,
+      "startMs": 496720,
+      "endMs": 501120,
+      "text": "Studio é mostrar para você toda a ideia"
+    },
+    {
+      "id": 251,
+      "startMs": 499240,
+      "endMs": 502639,
+      "text": "dos agentes criados ali. Nesse caso, a"
+    },
+    {
+      "id": 252,
+      "startMs": 501120,
+      "endMs": 503960,
+      "text": "gente tem um agente de tempo. Eu poderia"
+    },
+    {
+      "id": 253,
+      "startMs": 502639,
+      "endMs": 506520,
+      "text": "conversar aqui, é um agente que tem"
+    },
+    {
+      "id": 254,
+      "startMs": 503960,
+      "endMs": 507879,
+      "text": "memória, que tem ferramenta. Eu preciso"
+    },
+    {
+      "id": 255,
+      "startMs": 506520,
+      "endMs": 509199,
+      "text": "colocar minha chave de API, senão não"
+    },
+    {
+      "id": 256,
+      "startMs": 507879,
+      "endMs": 511680,
+      "text": "vai funcionar, mas vou colocar daqui a"
+    },
+    {
+      "id": 257,
+      "startMs": 509199,
+      "endMs": 513440,
+      "text": "pouco. Eu posso ter workflows. Workflows"
+    },
+    {
+      "id": 258,
+      "startMs": 511680,
+      "endMs": 515800,
+      "text": "é assim, eu vou, claro, disparar tudo"
+    },
+    {
+      "id": 259,
+      "startMs": 513440,
+      "endMs": 517039,
+      "text": "isso daqui depois por uma API e roda"
+    },
+    {
+      "id": 260,
+      "startMs": 515800,
+      "endMs": 519039,
+      "text": "esse workflow aqui. Quando ele tiver"
+    },
+    {
+      "id": 261,
+      "startMs": 517039,
+      "endMs": 520640,
+      "text": "pronto, daí ele vai fazer lá as"
+    },
+    {
+      "id": 262,
+      "startMs": 519039,
+      "endMs": 522800,
+      "text": "respostas e tudo mais. Então, workflow"
+    },
+    {
+      "id": 263,
+      "startMs": 520640,
+      "endMs": 525279,
+      "text": "fica executando ali em segundo plano. A"
+    },
+    {
+      "id": 264,
+      "startMs": 522800,
+      "endMs": 527120,
+      "text": "gente tem como criar MCPs, ferramentas,"
+    },
+    {
+      "id": 265,
+      "startMs": 525279,
+      "endMs": 529000,
+      "text": "eh, a gente tem como criar os scorers"
+    },
+    {
+      "id": 266,
+      "startMs": 527120,
+      "endMs": 530880,
+      "text": "que ele pode funcionar como guard rails,"
+    },
+    {
+      "id": 267,
+      "startMs": 529000,
+      "endMs": 533200,
+      "text": "como pontuações. Olha, se der essa"
+    },
+    {
+      "id": 268,
+      "startMs": 530880,
+      "endMs": 534839,
+      "text": "pontuação aqui, aí você fica ou"
+    },
+    {
+      "id": 269,
+      "startMs": 533200,
+      "endMs": 535880,
+      "text": "continua. Vai depender do workflow que"
+    },
+    {
+      "id": 270,
+      "startMs": 534839,
+      "endMs": 538200,
+      "text": "você vai querer depois, mas é uma"
+    },
+    {
+      "id": 271,
+      "startMs": 535880,
+      "endMs": 539800,
+      "text": "maneira de você ter ali os, em outras"
+    },
+    {
+      "id": 272,
+      "startMs": 538200,
+      "endMs": 541240,
+      "text": "palavras, os guard rails funcionando."
+    },
+    {
+      "id": 273,
+      "startMs": 539800,
+      "endMs": 542600,
+      "text": "Workspaces, como eu falei, que dá para"
+    },
+    {
+      "id": 274,
+      "startMs": 541240,
+      "endMs": 544600,
+      "text": "você colocar, tantas outras coisas que"
+    },
+    {
+      "id": 275,
+      "startMs": 542600,
+      "endMs": 547079,
+      "text": "você tem, além da parte dos templates"
+    },
+    {
+      "id": 276,
+      "startMs": 544600,
+      "endMs": 549200,
+      "text": "aqui, observabilidade, enfim, é bem"
+    },
+    {
+      "id": 277,
+      "startMs": 547079,
+      "endMs": 550800,
+      "text": "legal. O estúdio já é o suficiente assim"
+    },
+    {
+      "id": 278,
+      "startMs": 549200,
+      "endMs": 552320,
+      "text": "para você falar assim: \"Cara, que que"
+    },
+    {
+      "id": 279,
+      "startMs": 550800,
+      "endMs": 554399,
+      "text": "experiência de desenvolvimento de"
+    },
+    {
+      "id": 280,
+      "startMs": 552320,
+      "endMs": 556160,
+      "text": "desenvolvimento bacana que ele dá pra"
+    },
+    {
+      "id": 281,
+      "startMs": 554399,
+      "endMs": 558120,
+      "text": "gente\". E é isso mesmo, tá bom? Vou"
+    },
+    {
+      "id": 282,
+      "startMs": 556160,
+      "endMs": 561440,
+      "text": "fechar aqui, vou colocar na minha"
+    },
+    {
+      "id": 283,
+      "startMs": 558120,
+      "endMs": 563920,
+      "text": "ferramenta do tray men r para fazer"
+    },
+    {
+      "id": 284,
+      "startMs": 561440,
+      "endMs": 565160,
+      "text": "reload do tray. O tray é a ferramenta de"
+    },
+    {
+      "id": 285,
+      "startMs": 563920,
+      "endMs": 567519,
+      "text": "inteligência artificial que eu tenho"
+    },
+    {
+      "id": 286,
+      "startMs": 565160,
+      "endMs": 569000,
+      "text": "usado e provavelmente vou parar de usar"
+    },
+    {
+      "id": 287,
+      "startMs": 567519,
+      "endMs": 570800,
+      "text": "em breve porque eles estão mudando a"
+    },
+    {
+      "id": 288,
+      "startMs": 569000,
+      "endMs": 571600,
+      "text": "preficação. Não estou gostando pro"
+    },
+    {
+      "id": 289,
+      "startMs": 570800,
+      "endMs": 572839,
+      "text": "caminho que eles estão indo e"
+    },
+    {
+      "id": 290,
+      "startMs": 571600,
+      "endMs": 575240,
+      "text": "provavelmente vou parar de usar. A gente"
+    },
+    {
+      "id": 291,
+      "startMs": 572839,
+      "endMs": 577560,
+      "text": "pode conversar melhor sobre isso depois."
+    },
+    {
+      "id": 292,
+      "startMs": 575240,
+      "endMs": 580240,
+      "text": "Ã, mas vamos lá, cara. Que que nós temos"
+    },
+    {
+      "id": 293,
+      "startMs": 577560,
+      "endMs": 582399,
+      "text": "aqui? É parte do sece, que é o que"
+    },
+    {
+      "id": 294,
+      "startMs": 580240,
+      "endMs": 586079,
+      "text": "importa pra gente. Nós temos na pasta"
+    },
+    {
+      "id": 295,
+      "startMs": 582399,
+      "endMs": 589560,
+      "text": "Mastra os agentes, nós temos os scorers,"
+    },
+    {
+      "id": 296,
+      "startMs": 586079,
+      "endMs": 591279,
+      "text": "as tools, os os ouflow e o nosso index."
+    },
+    {
+      "id": 297,
+      "startMs": 589560,
+      "endMs": 593880,
+      "text": "O index é o que vai mostrar tudo que tá"
+    },
+    {
+      "id": 298,
+      "startMs": 591279,
+      "endMs": 596440,
+      "text": "funcionando, o novo MASRA para usar lá"
+    },
+    {
+      "id": 299,
+      "startMs": 593880,
+      "endMs": 597720,
+      "text": "no estúdio, né? Os workflows, agentes,"
+    },
+    {
+      "id": 300,
+      "startMs": 596440,
+      "endMs": 599360,
+      "text": "scores, etc. O que que a gente vai"
+    },
+    {
+      "id": 301,
+      "startMs": 597720,
+      "endMs": 601839,
+      "text": "fazer? Vamos fazer um limpo aqui. Eu"
+    },
+    {
+      "id": 302,
+      "startMs": 599360,
+      "endMs": 604040,
+      "text": "quero, eu quero aprender com vocês"
+    },
+    {
+      "id": 303,
+      "startMs": 601839,
+      "endMs": 605000,
+      "text": "criando algo, tá? e mostrar para vocês"
+    },
+    {
+      "id": 304,
+      "startMs": 604040,
+      "endMs": 606600,
+      "text": "como que eu uso a inteligência"
+    },
+    {
+      "id": 305,
+      "startMs": 605000,
+      "endMs": 608560,
+      "text": "artificial para aprender. É claro, eu"
+    },
+    {
+      "id": 306,
+      "startMs": 606600,
+      "endMs": 610440,
+      "text": "poderia ir lá na documentação e criar"
+    },
+    {
+      "id": 307,
+      "startMs": 608560,
+      "endMs": 612480,
+      "text": "manualmente do zerinho, como eu fazia no"
+    },
+    {
+      "id": 308,
+      "startMs": 610440,
+      "endMs": 614560,
+      "text": "passado, como os incas e maias fazia,"
+    },
+    {
+      "id": 309,
+      "startMs": 612480,
+      "endMs": 615680,
+      "text": "mas agora a gente trabalha na era da"
+    },
+    {
+      "id": 310,
+      "startMs": 614560,
+      "endMs": 616839,
+      "text": "inteligência artificial. Eu vou mostrar"
+    },
+    {
+      "id": 311,
+      "startMs": 615680,
+      "endMs": 618440,
+      "text": "para você como que funciona, caso você"
+    },
+    {
+      "id": 312,
+      "startMs": 616839,
+      "endMs": 620760,
+      "text": "ainda não entenda. Então, eu não preciso"
+    },
+    {
+      "id": 313,
+      "startMs": 618440,
+      "endMs": 622839,
+      "text": "de workflow agora. Eu vou precisar do"
+    },
+    {
+      "id": 314,
+      "startMs": 620760,
+      "endMs": 624760,
+      "text": "agente daqui a pouco. Eu não preciso de"
+    },
+    {
+      "id": 315,
+      "startMs": 622839,
+      "endMs": 626600,
+      "text": "scorrer agora para eu poder conversar."
+    },
+    {
+      "id": 316,
+      "startMs": 624760,
+      "endMs": 628800,
+      "text": "Deixa logger, deixa storage, deixa"
+    },
+    {
+      "id": 317,
+      "startMs": 626600,
+      "endMs": 631120,
+      "text": "observabilidade, não vai me atrapalhar."
+    },
+    {
+      "id": 318,
+      "startMs": 628800,
+      "endMs": 634480,
+      "text": "Não preciso então dessas importações, ó."
+    },
+    {
+      "id": 319,
+      "startMs": 631120,
+      "endMs": 636200,
+      "text": "Remove unused imports. Fechou. Vou vir"
+    },
+    {
+      "id": 320,
+      "startMs": 634480,
+      "endMs": 638639,
+      "text": "aqui na parte do agente, vou limpar esse"
+    },
+    {
+      "id": 321,
+      "startMs": 636200,
+      "endMs": 641000,
+      "text": "daqui. Vou deletar ele. Vou na parte do"
+    },
+    {
+      "id": 322,
+      "startMs": 638639,
+      "endMs": 642920,
+      "text": "scorers. Deletar, não preciso. Parte da"
+    },
+    {
+      "id": 323,
+      "startMs": 641000,
+      "endMs": 644760,
+      "text": "tools vou tirar, mas vou deixar a pasta"
+    },
+    {
+      "id": 324,
+      "startMs": 642920,
+      "endMs": 646200,
+      "text": "só para poder ajudar. E workflows vou"
+    },
+    {
+      "id": 325,
+      "startMs": 644760,
+      "endMs": 648399,
+      "text": "tirar porque eu não vou trabalhar com"
+    },
+    {
+      "id": 326,
+      "startMs": 646200,
+      "endMs": 651160,
+      "text": "workflows com vocês aqui. Vou abrir aqui"
+    },
+    {
+      "id": 327,
+      "startMs": 648399,
+      "endMs": 653959,
+      "text": "e vou abrir o Gemini. O Gemini a gente"
+    },
+    {
+      "id": 328,
+      "startMs": 651160,
+      "endMs": 655880,
+      "text": "pediu lá no comecinho para ele criar as"
+    },
+    {
+      "id": 329,
+      "startMs": 653959,
+      "endMs": 658720,
+      "text": "skills do Mastra. Então tá aqui ponto"
+    },
+    {
+      "id": 330,
+      "startMs": 655880,
+      "endMs": 661320,
+      "text": "agents. Você pode ver aqui, né? Agents"
+    },
+    {
+      "id": 331,
+      "startMs": 658720,
+      "endMs": 663560,
+      "text": "skills Mastra references. E aqui tá a"
+    },
+    {
+      "id": 332,
+      "startMs": 661320,
+      "endMs": 666000,
+      "text": "skill que ele tá do master, tá vendo?"
+    },
+    {
+      "id": 333,
+      "startMs": 663560,
+      "endMs": 669200,
+      "text": "Fator skill aqui explicando como que ele"
+    },
+    {
+      "id": 334,
+      "startMs": 666000,
+      "endMs": 671040,
+      "text": "vai usar as coisas. Então eu vou querer"
+    },
+    {
+      "id": 335,
+      "startMs": 669200,
+      "endMs": 673360,
+      "text": "criar um agente aqui. Eu já tenho até"
+    },
+    {
+      "id": 336,
+      "startMs": 671040,
+      "endMs": 674800,
+      "text": "escrito o que eu quero, porque eu tinha"
+    },
+    {
+      "id": 337,
+      "startMs": 673360,
+      "endMs": 676200,
+      "text": "feito esse vídeo em outro momento. Vou"
+    },
+    {
+      "id": 338,
+      "startMs": 674800,
+      "endMs": 678399,
+      "text": "explicar para vocês o que acontece muito"
+    },
+    {
+      "id": 339,
+      "startMs": 676200,
+      "endMs": 679839,
+      "text": "paraa gravação de vídeo. É, se você já"
+    },
+    {
+      "id": 340,
+      "startMs": 678399,
+      "endMs": 681680,
+      "text": "foi produtor ou quer ser produtor de"
+    },
+    {
+      "id": 341,
+      "startMs": 679839,
+      "endMs": 684560,
+      "text": "vídeo, é, eu gravei já esse vídeo"
+    },
+    {
+      "id": 342,
+      "startMs": 681680,
+      "endMs": 686560,
+      "text": "todinho e eu gravei ele com a tela"
+    },
+    {
+      "id": 343,
+      "startMs": 684560,
+      "endMs": 688959,
+      "text": "desligada praticamente. Imagina isso. Lá"
+    },
+    {
+      "id": 344,
+      "startMs": 686560,
+      "endMs": 690560,
+      "text": "no OBS tinha uma configuração que estava"
+    },
+    {
+      "id": 345,
+      "startMs": 688959,
+      "endMs": 692440,
+      "text": "desligada a tela. Então eu tenho que"
+    },
+    {
+      "id": 346,
+      "startMs": 690560,
+      "endMs": 693800,
+      "text": "regravar tudo. Só que por tudo isso eu"
+    },
+    {
+      "id": 347,
+      "startMs": 692440,
+      "endMs": 695880,
+      "text": "já passei. Vou explicar, vou ler para"
+    },
+    {
+      "id": 348,
+      "startMs": 693800,
+      "endMs": 697880,
+      "text": "você. Crie um agente que possa fazer uma"
+    },
+    {
+      "id": 349,
+      "startMs": 695880,
+      "endMs": 699600,
+      "text": "pesquisa na internet usando Tavly. Tá"
+    },
+    {
+      "id": 350,
+      "startMs": 697880,
+      "endMs": 702120,
+      "text": "escrito errado, mas ele vai corrigir"
+    },
+    {
+      "id": 351,
+      "startMs": 699600,
+      "endMs": 703639,
+      "text": "isso, que é uma ferramenta. Ah, vou"
+    },
+    {
+      "id": 352,
+      "startMs": 702120,
+      "endMs": 705040,
+      "text": "permitir tudo para essa sessão. Ele"
+    },
+    {
+      "id": 353,
+      "startMs": 703639,
+      "endMs": 707200,
+      "text": "carregar as skills. Ele tá carregando as"
+    },
+    {
+      "id": 354,
+      "startMs": 705040,
+      "endMs": 708800,
+      "text": "skills. Então ele vai poder, depois"
+    },
+    {
+      "id": 355,
+      "startMs": 707200,
+      "endMs": 709880,
+      "text": "dessa pesquisa que ele vai fazer com TL,"
+    },
+    {
+      "id": 356,
+      "startMs": 708800,
+      "endMs": 711240,
+      "text": "ele vai responder as seguintes"
+    },
+    {
+      "id": 357,
+      "startMs": 709880,
+      "endMs": 713800,
+      "text": "perguntas. Já te explico o que é Tevil."
+    },
+    {
+      "id": 358,
+      "startMs": 711240,
+      "endMs": 715959,
+      "text": "Calma. Quem criou, né? né? Quem se"
+    },
+    {
+      "id": 359,
+      "startMs": 713800,
+      "endMs": 717760,
+      "text": "beneficia, quem não se beneficia, quando"
+    },
+    {
+      "id": 360,
+      "startMs": 715959,
+      "endMs": 719760,
+      "text": "foi criado, quando usar, quando não"
+    },
+    {
+      "id": 361,
+      "startMs": 717760,
+      "endMs": 721680,
+      "text": "usar, como usar, que problema resolve,"
+    },
+    {
+      "id": 362,
+      "startMs": 719760,
+      "endMs": 723720,
+      "text": "por que existe etc. Ele vai refazer"
+    },
+    {
+      "id": 363,
+      "startMs": 721680,
+      "endMs": 724839,
+      "text": "depois para mim esse prompt. Fica em"
+    },
+    {
+      "id": 364,
+      "startMs": 723720,
+      "endMs": 725920,
+      "text": "paz, a gente já vai dar uma olhadinha e"
+    },
+    {
+      "id": 365,
+      "startMs": 724839,
+      "endMs": 727519,
+      "text": "se não refizer, a gente pede para ele"
+    },
+    {
+      "id": 366,
+      "startMs": 725920,
+      "endMs": 729240,
+      "text": "refazer. Então, todas essas perguntas"
+    },
+    {
+      "id": 367,
+      "startMs": 727519,
+      "endMs": 733000,
+      "text": "precisam respond ser respondidas com o"
+    },
+    {
+      "id": 368,
+      "startMs": 729240,
+      "endMs": 734800,
+      "text": "resultado da pesquisa do tablety, tá?"
+    },
+    {
+      "id": 369,
+      "startMs": 733000,
+      "endMs": 736360,
+      "text": "Faça essa e com que essas perguntas"
+    },
+    {
+      "id": 370,
+      "startMs": 734800,
+      "endMs": 737959,
+      "text": "sejam respondidas de forma organizada. É"
+    },
+    {
+      "id": 371,
+      "startMs": 736360,
+      "endMs": 739399,
+      "text": "que eu usei uma ferramenta aqui que"
+    },
+    {
+      "id": 372,
+      "startMs": 737959,
+      "endMs": 740920,
+      "text": "escreve para mim enquanto eu falo, tá?"
+    },
+    {
+      "id": 373,
+      "startMs": 739399,
+      "endMs": 743199,
+      "text": "Ó, vou mostrar essa ferramenta para"
+    },
+    {
+      "id": 374,
+      "startMs": 740920,
+      "endMs": 745120,
+      "text": "você. É essa daqui, super whisper, tá?"
+    },
+    {
+      "id": 375,
+      "startMs": 743199,
+      "endMs": 749040,
+      "text": "Então, se eu fizer isso daqui, ó. Ã,"
+    },
+    {
+      "id": 376,
+      "startMs": 745120,
+      "endMs": 750839,
+      "text": "isso daqui. Cadê? Ih, não tá funcionando"
+    },
+    {
+      "id": 377,
+      "startMs": 749040,
+      "endMs": 752399,
+      "text": "agora. Deve ter travado o super whisper."
+    },
+    {
+      "id": 378,
+      "startMs": 750839,
+      "endMs": 754120,
+      "text": "Ou ela não deve funcionar aqui enquanto"
+    },
+    {
+      "id": 379,
+      "startMs": 752399,
+      "endMs": 755680,
+      "text": "eu tô ali. Não sei. Deve ser algum"
+    },
+    {
+      "id": 380,
+      "startMs": 754120,
+      "endMs": 757240,
+      "text": "atalho que ela não tá funcionando, mas"
+    },
+    {
+      "id": 381,
+      "startMs": 755680,
+      "endMs": 758839,
+      "text": "não tem problema. Ó, vou deixar aqui ele"
+    },
+    {
+      "id": 382,
+      "startMs": 757240,
+      "endMs": 762360,
+      "text": "trabalhando e vou mostrar para você"
+    },
+    {
+      "id": 383,
+      "startMs": 758839,
+      "endMs": 764399,
+      "text": "agora o que é o Tavly, né? O Tavle."
+    },
+    {
+      "id": 384,
+      "startMs": 762360,
+      "endMs": 767199,
+      "text": "Deixa eu ver onde que eu botei ele aqui."
+    },
+    {
+      "id": 385,
+      "startMs": 764399,
+      "endMs": 768600,
+      "text": "Tavle. Aqui já tá dentro da plataforma,"
+    },
+    {
+      "id": 386,
+      "startMs": 767199,
+      "endMs": 770760,
+      "text": "mas eu queria abrir ele fora da"
+    },
+    {
+      "id": 387,
+      "startMs": 768600,
+      "endMs": 773120,
+      "text": "plataforma. Ó, se os seus agentes de A"
+    },
+    {
+      "id": 388,
+      "startMs": 770760,
+      "endMs": 775279,
+      "text": "precisarem fazer pesquisas na internet,"
+    },
+    {
+      "id": 389,
+      "startMs": 773120,
+      "endMs": 777240,
+      "text": "pesquisas em tempo real, extrair"
+    },
+    {
+      "id": 390,
+      "startMs": 775279,
+      "endMs": 779199,
+      "text": "informações, fazer research, web"
+    },
+    {
+      "id": 391,
+      "startMs": 777240,
+      "endMs": 781160,
+      "text": "crawling, provavelmente o Tevle é o que"
+    },
+    {
+      "id": 392,
+      "startMs": 779199,
+      "endMs": 783160,
+      "text": "você vai estar querendo utilizar. É um"
+    },
+    {
+      "id": 393,
+      "startMs": 781160,
+      "endMs": 785880,
+      "text": "pricing bem bacana, é um fio assim de é"
+    },
+    {
+      "id": 394,
+      "startMs": 783160,
+      "endMs": 787440,
+      "text": "1000 API créditos por mês, você consegue"
+    },
+    {
+      "id": 395,
+      "startMs": 785880,
+      "endMs": 789040,
+      "text": "usar de uma maneira bem tranquila e se"
+    },
+    {
+      "id": 396,
+      "startMs": 787440,
+      "endMs": 791079,
+      "text": "você começar a usar de uma maneira muito"
+    },
+    {
+      "id": 397,
+      "startMs": 789040,
+      "endMs": 793519,
+      "text": "profissional, tem um preço que não é,"
+    },
+    {
+      "id": 398,
+      "startMs": 791079,
+      "endMs": 795440,
+      "text": "para mim não é exorbitante, é um é um OK"
+    },
+    {
+      "id": 399,
+      "startMs": 793519,
+      "endMs": 797000,
+      "text": "de um preço. Você vai criar uma chave de"
+    },
+    {
+      "id": 400,
+      "startMs": 795440,
+      "endMs": 799279,
+      "text": "API e vai precisar dessa chave de API"
+    },
+    {
+      "id": 401,
+      "startMs": 797000,
+      "endMs": 800519,
+      "text": "daqui a pouco, tá bem? para que você"
+    },
+    {
+      "id": 402,
+      "startMs": 799279,
+      "endMs": 803120,
+      "text": "possa trabalhar aqui com o que a gente"
+    },
+    {
+      "id": 403,
+      "startMs": 800519,
+      "endMs": 804440,
+      "text": "tá fazendo aqui, por exemplo, em algum"
+    },
+    {
+      "id": 404,
+      "startMs": 803120,
+      "endMs": 806000,
+      "text": "momento, eu acho que ele vai acionar o"
+    },
+    {
+      "id": 405,
+      "startMs": 804440,
+      "endMs": 807959,
+      "text": "context [música] se aqui, eu não tenho"
+    },
+    {
+      "id": 406,
+      "startMs": 806000,
+      "endMs": 809440,
+      "text": "certeza, eu acho que vai, tá? Vamos ler"
+    },
+    {
+      "id": 407,
+      "startMs": 807959,
+      "endMs": 811120,
+      "text": "juntos o que ele vai fazer aqui, né?"
+    },
+    {
+      "id": 408,
+      "startMs": 809440,
+      "endMs": 813360,
+      "text": "Então, por enquanto, ele ativou a skill,"
+    },
+    {
+      "id": 409,
+      "startMs": 811120,
+      "endMs": 815040,
+      "text": "ele tá pesquisando ali as informações"
+    },
+    {
+      "id": 410,
+      "startMs": 813360,
+      "endMs": 817880,
+      "text": "para criar o que ele precisa criar com"
+    },
+    {
+      "id": 411,
+      "startMs": 815040,
+      "endMs": 820160,
+      "text": "Mastra, ele já tá entendendo que tem o"
+    },
+    {
+      "id": 412,
+      "startMs": 817880,
+      "endMs": 822040,
+      "text": "diretório ali, tá fazendo os scanners e"
+    },
+    {
+      "id": 413,
+      "startMs": 820160,
+      "endMs": 823920,
+      "text": "tudo mais. Vou deixar ele trabalhando."
+    },
+    {
+      "id": 414,
+      "startMs": 822040,
+      "endMs": 825920,
+      "text": "Eu uso sempre modo alto, tá, pessoal? Eu"
+    },
+    {
+      "id": 415,
+      "startMs": 823920,
+      "endMs": 827440,
+      "text": "não fico colocando modelo, ah, agora eu"
+    },
+    {
+      "id": 416,
+      "startMs": 825920,
+      "endMs": 829760,
+      "text": "vou mudar o modelo. Eu acho que o"
+    },
+    {
+      "id": 417,
+      "startMs": 827440,
+      "endMs": 830800,
+      "text": "próprio agente sabe trabalhar sobre isso"
+    },
+    {
+      "id": 418,
+      "startMs": 829760,
+      "endMs": 832120,
+      "text": "melhor que eu, do que eu ficar"
+    },
+    {
+      "id": 419,
+      "startMs": 830800,
+      "endMs": 834120,
+      "text": "escolhendo o modelo que vai ser melhor"
+    },
+    {
+      "id": 420,
+      "startMs": 832120,
+      "endMs": 835800,
+      "text": "para, ah, agora eu preciso entender esse"
+    },
+    {
+      "id": 421,
+      "startMs": 834120,
+      "endMs": 837680,
+      "text": "arquivo. Ah, então deixa eu mudar o"
+    },
+    {
+      "id": 422,
+      "startMs": 835800,
+      "endMs": 839560,
+      "text": "modelo para ele entender aquele arquivo."
+    },
+    {
+      "id": 423,
+      "startMs": 837680,
+      "endMs": 840880,
+      "text": "Eu acho isso desnecessário, mas se você"
+    },
+    {
+      "id": 424,
+      "startMs": 839560,
+      "endMs": 843399,
+      "text": "gosta de fazer dessa forma, não tem"
+    },
+    {
+      "id": 425,
+      "startMs": 840880,
+      "endMs": 845199,
+      "text": "problema. Aí tá um lance, né, um debate"
+    },
+    {
+      "id": 426,
+      "startMs": 843399,
+      "endMs": 847199,
+      "text": "bem legal que eu gosto de falar, é as"
+    },
+    {
+      "id": 427,
+      "startMs": 845199,
+      "endMs": 849079,
+      "text": "ferramentas elas estão para ajudar a"
+    },
+    {
+      "id": 428,
+      "startMs": 847199,
+      "endMs": 850519,
+      "text": "gente a partir dos princípios que a"
+    },
+    {
+      "id": 429,
+      "startMs": 849079,
+      "endMs": 852399,
+      "text": "gente já sabe. Então a gente já sabe"
+    },
+    {
+      "id": 430,
+      "startMs": 850519,
+      "endMs": 853680,
+      "text": "muitos princípios que, por exemplo, eu"
+    },
+    {
+      "id": 431,
+      "startMs": 852399,
+      "endMs": 856000,
+      "text": "falei, eu não uso cloud code, eu acho"
+    },
+    {
+      "id": 432,
+      "startMs": 853680,
+      "endMs": 857360,
+      "text": "que é desnecessário eu pagar uma fortuna"
+    },
+    {
+      "id": 433,
+      "startMs": 856000,
+      "endMs": 859959,
+      "text": "lá para eles, sendo que os princípios"
+    },
+    {
+      "id": 434,
+      "startMs": 857360,
+      "endMs": 861560,
+      "text": "que eu tenho e as ferramentas gratuitas"
+    },
+    {
+      "id": 435,
+      "startMs": 859959,
+      "endMs": 863120,
+      "text": "que eu tenho já resolvem para mim,"
+    },
+    {
+      "id": 436,
+      "startMs": 861560,
+      "endMs": 867320,
+      "text": "porque eu tô fazendo gratuitas. O"
+    },
+    {
+      "id": 437,
+      "startMs": 863120,
+      "endMs": 869199,
+      "text": "Gemini, eu uso lá o o plano AI, nem"
+    },
+    {
+      "id": 438,
+      "startMs": 867320,
+      "endMs": 872240,
+      "text": "lembro, é Google One Pro, acho que é"
+    },
+    {
+      "id": 439,
+      "startMs": 869199,
+      "endMs": 874279,
+      "text": "Google One Pro, porque eu já usava ele"
+    },
+    {
+      "id": 440,
+      "startMs": 872240,
+      "endMs": 875800,
+      "text": "de storage, depois que eu eu já usava"
+    },
+    {
+      "id": 441,
+      "startMs": 874279,
+      "endMs": 878040,
+      "text": "ele, eu já pagava ele. De repente do"
+    },
+    {
+      "id": 442,
+      "startMs": 875800,
+      "endMs": 880199,
+      "text": "nada ele vem como brinde para mim a"
+    },
+    {
+      "id": 443,
+      "startMs": 878040,
+      "endMs": 882199,
+      "text": "inteligência artificial, fechou, já"
+    },
+    {
+      "id": 444,
+      "startMs": 880199,
+      "endMs": 884480,
+      "text": "pagava, já usava, não tô não tô gastando"
+    },
+    {
+      "id": 445,
+      "startMs": 882199,
+      "endMs": 886519,
+      "text": "nada mais com isso, não é mesmo? Então"
+    },
+    {
+      "id": 446,
+      "startMs": 884480,
+      "endMs": 888000,
+      "text": "por isso que eu falo gratuito, né? Ahã"
+    },
+    {
+      "id": 447,
+      "startMs": 886519,
+      "endMs": 889600,
+      "text": "por que que eu vou talvez parar de usar"
+    },
+    {
+      "id": 448,
+      "startMs": 888000,
+      "endMs": 892639,
+      "text": "o o tray? Porque eles vai cobrar por"
+    },
+    {
+      "id": 449,
+      "startMs": 889600,
+      "endMs": 894519,
+      "text": "token utilizado, cara. Não preciso. Você"
+    },
+    {
+      "id": 450,
+      "startMs": 892639,
+      "endMs": 896440,
+      "text": "vai cobrar? Então, cara, desliga. Vou lá"
+    },
+    {
+      "id": 451,
+      "startMs": 894519,
+      "endMs": 898600,
+      "text": "pro antigravity que tá dentro do Pro"
+    },
+    {
+      "id": 452,
+      "startMs": 896440,
+      "endMs": 900040,
+      "text": "também e acabou. Eh, a ferramenta ela"
+    },
+    {
+      "id": 453,
+      "startMs": 898600,
+      "endMs": 901839,
+      "text": "vai ajudar a gente. Então, algumas"
+    },
+    {
+      "id": 454,
+      "startMs": 900040,
+      "endMs": 904959,
+      "text": "coisas da ferramenta que tá ali para"
+    },
+    {
+      "id": 455,
+      "startMs": 901839,
+      "endMs": 906759,
+      "text": "ajudar ajuda. Se não tá ali, eu vou lá e"
+    },
+    {
+      "id": 456,
+      "startMs": 904959,
+      "endMs": 908600,
+      "text": "faço o que eu preciso através dos"
+    },
+    {
+      "id": 457,
+      "startMs": 906759,
+      "endMs": 910800,
+      "text": "fundamentos. Por exemplo, aqui ela já"
+    },
+    {
+      "id": 458,
+      "startMs": 908600,
+      "endMs": 913199,
+      "text": "está 2 minutos e pouco. Aqui, meu, é um"
+    },
+    {
+      "id": 459,
+      "startMs": 910800,
+      "endMs": 914959,
+      "text": "ES e um continue, porque eu já sei que"
+    },
+    {
+      "id": 460,
+      "startMs": 913199,
+      "endMs": 916600,
+      "text": "ela entrou em loop. Eu já sei que ela"
+    },
+    {
+      "id": 461,
+      "startMs": 914959,
+      "endMs": 918079,
+      "text": "ativou alguma coisa ali dentro dela, que"
+    },
+    {
+      "id": 462,
+      "startMs": 916600,
+      "endMs": 920839,
+      "text": "ela não consegue sair. É uma coisa deve"
+    },
+    {
+      "id": 463,
+      "startMs": 918079,
+      "endMs": 922360,
+      "text": "ser ridícula. Eu dou um es e continuo"
+    },
+    {
+      "id": 464,
+      "startMs": 920839,
+      "endMs": 923600,
+      "text": "princípios."
+    },
+    {
+      "id": 465,
+      "startMs": 922360,
+      "endMs": 924880,
+      "text": "Se a pessoa não tem esse princípio, ela"
+    },
+    {
+      "id": 466,
+      "startMs": 923600,
+      "endMs": 927320,
+      "text": "vai deixar a ferramenta ali trabalhando"
+    },
+    {
+      "id": 467,
+      "startMs": 924880,
+      "endMs": 928680,
+      "text": "por horas e não precisa. Ah, a própria"
+    },
+    {
+      "id": 468,
+      "startMs": 927320,
+      "endMs": 930720,
+      "text": "ferramenta vai avisar em algum momento."
+    },
+    {
+      "id": 469,
+      "startMs": 928680,
+      "endMs": 932319,
+      "text": "Olha, travei, não consigo sair do lugar."
+    },
+    {
+      "id": 470,
+      "startMs": 930720,
+      "endMs": 934639,
+      "text": "Cara, dá um esquezinho, percebeu?"
+    },
+    {
+      "id": 471,
+      "startMs": 932319,
+      "endMs": 936319,
+      "text": "Demorou. Ela tinha falado que ela ia ler"
+    },
+    {
+      "id": 472,
+      "startMs": 934639,
+      "endMs": 937519,
+      "text": "um arquivo, não leva 2 minutos para ler"
+    },
+    {
+      "id": 473,
+      "startMs": 936319,
+      "endMs": 939639,
+      "text": "um arquivo. A inteligência artificial"
+    },
+    {
+      "id": 474,
+      "startMs": 937519,
+      "endMs": 941240,
+      "text": "leva milissegundos para ler arquivo."
+    },
+    {
+      "id": 475,
+      "startMs": 939639,
+      "endMs": 943319,
+      "text": "Então não deveria estar demorando. Por"
+    },
+    {
+      "id": 476,
+      "startMs": 941240,
+      "endMs": 945560,
+      "text": "isso, ESC e continua, tá? Então esse é o"
+    },
+    {
+      "id": 477,
+      "startMs": 943319,
+      "endMs": 947160,
+      "text": "papinho enquanto a gente tá trabalhando"
+    },
+    {
+      "id": 478,
+      "startMs": 945560,
+      "endMs": 949600,
+      "text": "aqui para que você possa entender que o"
+    },
+    {
+      "id": 479,
+      "startMs": 947160,
+      "endMs": 951120,
+      "text": "mais importante agora é você saber que"
+    },
+    {
+      "id": 480,
+      "startMs": 949600,
+      "endMs": 952920,
+      "text": "as ferramentas estão ali para te ajudar."
+    },
+    {
+      "id": 481,
+      "startMs": 951120,
+      "endMs": 954600,
+      "text": "Não seja escravo delas, mas elas têm que"
+    },
+    {
+      "id": 482,
+      "startMs": 952920,
+      "endMs": 956759,
+      "text": "servir você. Se não tá servindo, cara,"
+    },
+    {
+      "id": 483,
+      "startMs": 954600,
+      "endMs": 957880,
+      "text": "apaga. Não precisa cair em hype, né? A"
+    },
+    {
+      "id": 484,
+      "startMs": 956759,
+      "endMs": 960079,
+      "text": "gente pode conversar melhor sobre isso"
+    },
+    {
+      "id": 485,
+      "startMs": 957880,
+      "endMs": 961880,
+      "text": "depois. Detalhe o por que tá aberto o"
+    },
+    {
+      "id": 486,
+      "startMs": 960079,
+      "endMs": 963000,
+      "text": "Context Sev. Porque como eu falei, eu já"
+    },
+    {
+      "id": 487,
+      "startMs": 961880,
+      "endMs": 965600,
+      "text": "tentei gravar o vídeo antes, deu"
+    },
+    {
+      "id": 488,
+      "startMs": 963000,
+      "endMs": 968240,
+      "text": "problema. Ele ativou o Context Sev que é"
+    },
+    {
+      "id": 489,
+      "startMs": 965600,
+      "endMs": 971120,
+      "text": "um MCP que tem as documentações. Por"
+    },
+    {
+      "id": 490,
+      "startMs": 968240,
+      "endMs": 972880,
+      "text": "exemplo, Tavely. Ele vai encontrar na"
+    },
+    {
+      "id": 491,
+      "startMs": 971120,
+      "endMs": 975040,
+      "text": "documentação do Tevil como que faz para"
+    },
+    {
+      "id": 492,
+      "startMs": 972880,
+      "endMs": 977759,
+      "text": "ele poder ativar o Tevil na nossa"
+    },
+    {
+      "id": 493,
+      "startMs": 975040,
+      "endMs": 979440,
+      "text": "máquina. É isso. Que que a gente fazia"
+    },
+    {
+      "id": 494,
+      "startMs": 977759,
+      "endMs": 982440,
+      "text": "antes? A gente tinha que ir lá na"
+    },
+    {
+      "id": 495,
+      "startMs": 979440,
+      "endMs": 983800,
+      "text": "documentação, ler, entender, trazer para"
+    },
+    {
+      "id": 496,
+      "startMs": 982440,
+      "endMs": 986880,
+      "text": "o contexto da inteligência artificial e"
+    },
+    {
+      "id": 497,
+      "startMs": 983800,
+      "endMs": 988160,
+      "text": "ela aplicaria. Com context S. Esse MCP é"
+    },
+    {
+      "id": 498,
+      "startMs": 986880,
+      "endMs": 990120,
+      "text": "uma etapa menos que eu que eu não"
+    },
+    {
+      "id": 499,
+      "startMs": 988160,
+      "endMs": 992680,
+      "text": "preciso me preocupar. Ele vai lá, o"
+    },
+    {
+      "id": 500,
+      "startMs": 990120,
+      "endMs": 995000,
+      "text": "próprio agente ativa, ele vai e entende."
+    },
+    {
+      "id": 501,
+      "startMs": 992680,
+      "endMs": 997440,
+      "text": "Tá bem? Ó, aqui ele tá entendendo alguma"
+    },
+    {
+      "id": 502,
+      "startMs": 995000,
+      "endMs": 1000040,
+      "text": "coisa de weather. Ah, sim, porque"
+    },
+    {
+      "id": 503,
+      "startMs": 997440,
+      "endMs": 1001639,
+      "text": "provavelmente eh tinha alguma coisa"
+    },
+    {
+      "id": 504,
+      "startMs": 1000040,
+      "endMs": 1004680,
+      "text": "feita antes com weather, né? Por isso"
+    },
+    {
+      "id": 505,
+      "startMs": 1001639,
+      "endMs": 1006120,
+      "text": "que ele tá vendo aqui esse weather."
+    },
+    {
+      "id": 506,
+      "startMs": 1004680,
+      "endMs": 1008920,
+      "text": "Então, vamos esperar aqui que ele tá"
+    },
+    {
+      "id": 507,
+      "startMs": 1006120,
+      "endMs": 1010560,
+      "text": "fazendo. Tá lendo os dot. Eu vou"
+    },
+    {
+      "id": 508,
+      "startMs": 1008920,
+      "endMs": 1012720,
+      "text": "precisar do meu dot em algum momento"
+    },
+    {
+      "id": 509,
+      "startMs": 1010560,
+      "endMs": 1014560,
+      "text": "aqui. Não sei se ele vai criar para mim,"
+    },
+    {
+      "id": 510,
+      "startMs": 1012720,
+      "endMs": 1016040,
+      "text": "mas e se ele não criar, eu mesmo crio,"
+    },
+    {
+      "id": 511,
+      "startMs": 1014560,
+      "endMs": 1018079,
+      "text": "não tem problema. Aqui ele tá querendo"
+    },
+    {
+      "id": 512,
+      "startMs": 1016040,
+      "endMs": 1020040,
+      "text": "criar então a tool. Olha ali a tool"
+    },
+    {
+      "id": 513,
+      "startMs": 1018079,
+      "endMs": 1022440,
+      "text": "chamada Tavle. Então vou deixar com que"
+    },
+    {
+      "id": 514,
+      "startMs": 1020040,
+      "endMs": 1025199,
+      "text": "ele crie essa tool. E a partir daqui"
+    },
+    {
+      "id": 515,
+      "startMs": 1022440,
+      "endMs": 1026640,
+      "text": "começa o nosso trabalho de aprender com"
+    },
+    {
+      "id": 516,
+      "startMs": 1025199,
+      "endMs": 1028160,
+      "text": "a inteligência artificial. Então deixa"
+    },
+    {
+      "id": 517,
+      "startMs": 1026640,
+      "endMs": 1029919,
+      "text": "ele fazer aqui todo o trabalho que ele"
+    },
+    {
+      "id": 518,
+      "startMs": 1028160,
+      "endMs": 1031760,
+      "text": "tem que fazer. E como que faz pra gente"
+    },
+    {
+      "id": 519,
+      "startMs": 1029919,
+      "endMs": 1033400,
+      "text": "aprender com a inteligência artificial?"
+    },
+    {
+      "id": 520,
+      "startMs": 1031760,
+      "endMs": 1034919,
+      "text": "Eh, já falei isso em outro vídeo, até"
+    },
+    {
+      "id": 521,
+      "startMs": 1033400,
+      "endMs": 1036919,
+      "text": "fica aí para você assistir depois. Vou"
+    },
+    {
+      "id": 522,
+      "startMs": 1034919,
+      "endMs": 1040120,
+      "text": "deixar o vídeo aí para você assistir."
+    },
+    {
+      "id": 523,
+      "startMs": 1036919,
+      "endMs": 1042280,
+      "text": "Mas funciona basicamente você ler o que"
+    },
+    {
+      "id": 524,
+      "startMs": 1040120,
+      "endMs": 1044000,
+      "text": "ele criou e tentar entender. Se você não"
+    },
+    {
+      "id": 525,
+      "startMs": 1042280,
+      "endMs": 1046480,
+      "text": "entender, você vai pedir informações"
+    },
+    {
+      "id": 526,
+      "startMs": 1044000,
+      "endMs": 1048520,
+      "text": "para que ele possa ajudar. Aqui eu sinto"
+    },
+    {
+      "id": 527,
+      "startMs": 1046480,
+      "endMs": 1050480,
+      "text": "que está faltando informação aqui, tá?"
+    },
+    {
+      "id": 528,
+      "startMs": 1048520,
+      "endMs": 1052200,
+      "text": "Eu sinto que eles não que o return dele,"
+    },
+    {
+      "id": 529,
+      "startMs": 1050480,
+      "endMs": 1054440,
+      "text": "por exemplo, que tá em Jason, ele"
+    },
+    {
+      "id": 530,
+      "startMs": 1052200,
+      "endMs": 1056000,
+      "text": "poderia trazer um output esquema aqui,"
+    },
+    {
+      "id": 531,
+      "startMs": 1054440,
+      "endMs": 1057520,
+      "text": "mas ele não trouxe. Eu posso pedir para"
+    },
+    {
+      "id": 532,
+      "startMs": 1056000,
+      "endMs": 1059440,
+      "text": "ele fazer depois. Mas que ele tá"
+    },
+    {
+      "id": 533,
+      "startMs": 1057520,
+      "endMs": 1061840,
+      "text": "fazendo, ó, create tool. Toda tool tem"
+    },
+    {
+      "id": 534,
+      "startMs": 1059440,
+      "endMs": 1063520,
+      "text": "um ID, tem uma descrição, tem um input"
+    },
+    {
+      "id": 535,
+      "startMs": 1061840,
+      "endMs": 1065520,
+      "text": "que é uma query. Tá aqui a querer"
+    },
+    {
+      "id": 536,
+      "startMs": 1063520,
+      "endMs": 1067919,
+      "text": "recebeu aqui no execute, então ele vai"
+    },
+    {
+      "id": 537,
+      "startMs": 1065520,
+      "endMs": 1070160,
+      "text": "executar alguma coisa, vai executar com"
+    },
+    {
+      "id": 538,
+      "startMs": 1067919,
+      "endMs": 1072039,
+      "text": "tev. É um fat simples que ele tá"
+    },
+    {
+      "id": 539,
+      "startMs": 1070160,
+      "endMs": 1074679,
+      "text": "fazendo. Então tudo isso vai envolver os"
+    },
+    {
+      "id": 540,
+      "startMs": 1072039,
+      "endMs": 1076000,
+      "text": "meus conhecimentos de inteligção"
+    },
+    {
+      "id": 541,
+      "startMs": 1074679,
+      "endMs": 1077919,
+      "text": "com os conhecimentos de inteligência"
+    },
+    {
+      "id": 542,
+      "startMs": 1076000,
+      "endMs": 1080840,
+      "text": "artificial. Então aqui eu já entendi"
+    },
+    {
+      "id": 543,
+      "startMs": 1077919,
+      "endMs": 1083320,
+      "text": "como que funciona a criação de umatu no"
+    },
+    {
+      "id": 544,
+      "startMs": 1080840,
+      "endMs": 1085200,
+      "text": "Mastra. Maicão, apaga tudo, desliga a"
+    },
+    {
+      "id": 545,
+      "startMs": 1083320,
+      "endMs": 1086679,
+      "text": "internet, desliga a LLM e tenta fazer"
+    },
+    {
+      "id": 546,
+      "startMs": 1085200,
+      "endMs": 1088559,
+      "text": "isso na mão. Você vai conseguir? Não vou"
+    },
+    {
+      "id": 547,
+      "startMs": 1086679,
+      "endMs": 1089960,
+      "text": "conseguir. Você vai conseguir? Você que"
+    },
+    {
+      "id": 548,
+      "startMs": 1088559,
+      "endMs": 1092400,
+      "text": "tá vendo a primeira vez, vai conseguir?"
+    },
+    {
+      "id": 549,
+      "startMs": 1089960,
+      "endMs": 1093600,
+      "text": "Não vai conseguir. E tá tudo bem. Hoje"
+    },
+    {
+      "id": 550,
+      "startMs": 1092400,
+      "endMs": 1094760,
+      "text": "você trabalha com internet, você não"
+    },
+    {
+      "id": 551,
+      "startMs": 1093600,
+      "endMs": 1096720,
+      "text": "desliga a internet. Hoje você trabalha"
+    },
+    {
+      "id": 552,
+      "startMs": 1094760,
+      "endMs": 1098919,
+      "text": "com Ll, você não desliga a LLM, ela tá"
+    },
+    {
+      "id": 553,
+      "startMs": 1096720,
+      "endMs": 1101200,
+      "text": "ali para te ajudar. Porém, se você quer"
+    },
+    {
+      "id": 554,
+      "startMs": 1098919,
+      "endMs": 1103400,
+      "text": "ser uma pessoa muito não, eu quero fazer"
+    },
+    {
+      "id": 555,
+      "startMs": 1101200,
+      "endMs": 1105360,
+      "text": "isso manualmente. Usa essa experiência"
+    },
+    {
+      "id": 556,
+      "startMs": 1103400,
+      "endMs": 1107280,
+      "text": "aqui, ó. Agora apaga e vai lá. Você já"
+    },
+    {
+      "id": 557,
+      "startMs": 1105360,
+      "endMs": 1109200,
+      "text": "sabe que o create tem ID, que o create"
+    },
+    {
+      "id": 558,
+      "startMs": 1107280,
+      "endMs": 1111200,
+      "text": "tem description, que o create tem input,"
+    },
+    {
+      "id": 559,
+      "startMs": 1109200,
+      "endMs": 1114200,
+      "text": "output, esquema, que ele tem o execute."
+    },
+    {
+      "id": 560,
+      "startMs": 1111200,
+      "endMs": 1115960,
+      "text": "No execute ele vai receber ali ah o"
+    },
+    {
+      "id": 561,
+      "startMs": 1114200,
+      "endMs": 1117600,
+      "text": "input que você colocou, faz tudo que ele"
+    },
+    {
+      "id": 562,
+      "startMs": 1115960,
+      "endMs": 1119720,
+      "text": "precisa fazer e retorna, acabou. Você já"
+    },
+    {
+      "id": 563,
+      "startMs": 1117600,
+      "endMs": 1121280,
+      "text": "vai saber, entendeu? Mas não precisa,"
+    },
+    {
+      "id": 564,
+      "startMs": 1119720,
+      "endMs": 1123400,
+      "text": "isso que eu quero dizer, não precisa."
+    },
+    {
+      "id": 565,
+      "startMs": 1121280,
+      "endMs": 1125280,
+      "text": "Quando você tá vendo agora o agente, o"
+    },
+    {
+      "id": 566,
+      "startMs": 1123400,
+      "endMs": 1127520,
+      "text": "researcher, é quase a mesma ideia. É um"
+    },
+    {
+      "id": 567,
+      "startMs": 1125280,
+      "endMs": 1129840,
+      "text": "novo agente que tem ID, nome,"
+    },
+    {
+      "id": 568,
+      "startMs": 1127520,
+      "endMs": 1131000,
+      "text": "instruction. Faltou aqui um um memory,"
+    },
+    {
+      "id": 569,
+      "startMs": 1129840,
+      "endMs": 1133400,
+      "text": "né?"
+    },
+    {
+      "id": 570,
+      "startMs": 1131000,
+      "endMs": 1136799,
+      "text": "Vamos colocar uma memória nele. É, deixa"
+    },
+    {
+      "id": 571,
+      "startMs": 1133400,
+      "endMs": 1138960,
+      "text": "aqui como memory"
+    },
+    {
+      "id": 572,
+      "startMs": 1136799,
+      "endMs": 1140240,
+      "text": "aqui. Eu preciso trazer invés de eneg"
+    },
+    {
+      "id": 573,
+      "startMs": 1138960,
+      "endMs": 1142360,
+      "text": "aqui eu vou trazer um new memory ou vou"
+    },
+    {
+      "id": 574,
+      "startMs": 1140240,
+      "endMs": 1143679,
+      "text": "pedir para ele colocar, né? É new. Vou"
+    },
+    {
+      "id": 575,
+      "startMs": 1142360,
+      "endMs": 1145320,
+      "text": "pedir para ele colocar. Pronto. Que daí"
+    },
+    {
+      "id": 576,
+      "startMs": 1143679,
+      "endMs": 1149159,
+      "text": "ele trabalha para mim. Mas aqui, ó, você"
+    },
+    {
+      "id": 577,
+      "startMs": 1145320,
+      "endMs": 1151880,
+      "text": "é um agente tatá. Aqui Gemini 1 pon não"
+    },
+    {
+      "id": 578,
+      "startMs": 1149159,
+      "endMs": 1153640,
+      "text": "2.5. Então são coisas, tá vendo? Olha"
+    },
+    {
+      "id": 579,
+      "startMs": 1151880,
+      "endMs": 1155240,
+      "text": "como que funciona. Você entende os"
+    },
+    {
+      "id": 580,
+      "startMs": 1153640,
+      "endMs": 1157159,
+      "text": "princípios. Você sabe que o Gaminai 1.5"
+    },
+    {
+      "id": 581,
+      "startMs": 1155240,
+      "endMs": 1158919,
+      "text": "flash, acho que nem tá ativo mais. Você"
+    },
+    {
+      "id": 582,
+      "startMs": 1157159,
+      "endMs": 1161440,
+      "text": "vai lá e troca o que precisa ou pede pro"
+    },
+    {
+      "id": 583,
+      "startMs": 1158919,
+      "endMs": 1162960,
+      "text": "carinha trocar, né? Então, ó, adiciona."
+    },
+    {
+      "id": 584,
+      "startMs": 1161440,
+      "endMs": 1164559,
+      "text": "Ah, deixa eu adicionar aqui, ó. Ele não"
+    },
+    {
+      "id": 585,
+      "startMs": 1162960,
+      "endMs": 1166559,
+      "text": "entendeu, por exemplo, que a gente tá"
+    },
+    {
+      "id": 586,
+      "startMs": 1164559,
+      "endMs": 1168200,
+      "text": "usando o ban. Em algum momento aqui ele"
+    },
+    {
+      "id": 587,
+      "startMs": 1166559,
+      "endMs": 1171080,
+      "text": "deveria estar pegando, porque aqui tem"
+    },
+    {
+      "id": 588,
+      "startMs": 1168200,
+      "endMs": 1172640,
+      "text": "no cursor, né? Use bun instead of. Isso"
+    },
+    {
+      "id": 589,
+      "startMs": 1171080,
+      "endMs": 1175159,
+      "text": "daqui eu deveria estar deixando essas"
+    },
+    {
+      "id": 590,
+      "startMs": 1172640,
+      "endMs": 1177159,
+      "text": "rules, quem sabe de alguma forma no"
+    },
+    {
+      "id": 591,
+      "startMs": 1175159,
+      "endMs": 1178799,
+      "text": "Gemini, mas para que ele possa entender"
+    },
+    {
+      "id": 592,
+      "startMs": 1177159,
+      "endMs": 1180200,
+      "text": "que é o ban aqui, não é o node que a"
+    },
+    {
+      "id": 593,
+      "startMs": 1178799,
+      "endMs": 1182400,
+      "text": "gente tá usando para resolver esse"
+    },
+    {
+      "id": 594,
+      "startMs": 1180200,
+      "endMs": 1183840,
+      "text": "probleminha, mas tudo tudo bem, não tem"
+    },
+    {
+      "id": 595,
+      "startMs": 1182400,
+      "endMs": 1186440,
+      "text": "problema. Vamos ver como que tá o index"
+    },
+    {
+      "id": 596,
+      "startMs": 1183840,
+      "endMs": 1188360,
+      "text": "agora. No index ele veio aqui na parte"
+    },
+    {
+      "id": 597,
+      "startMs": 1186440,
+      "endMs": 1190480,
+      "text": "dos agentes, ele não trouxe, aliás, tem"
+    },
+    {
+      "id": 598,
+      "startMs": 1188360,
+      "endMs": 1192480,
+      "text": "uma alteração no arquivo, vou colocar"
+    },
+    {
+      "id": 599,
+      "startMs": 1190480,
+      "endMs": 1194159,
+      "text": "save, porque eu não sei se é alteração"
+    },
+    {
+      "id": 600,
+      "startMs": 1192480,
+      "endMs": 1197000,
+      "text": "que ele fez ou que eu fiz, tá aqui."
+    },
+    {
+      "id": 601,
+      "startMs": 1194159,
+      "endMs": 1199200,
+      "text": "Beleza? É isso mesmo. Então, o agente já"
+    },
+    {
+      "id": 602,
+      "startMs": 1197000,
+      "endMs": 1201760,
+      "text": "está aqui do research, né? Tá feito ali"
+    },
+    {
+      "id": 603,
+      "startMs": 1199200,
+      "endMs": 1203159,
+      "text": "para mim e fechou. Então eu vou pedir"
+    },
+    {
+      "id": 604,
+      "startMs": 1201760,
+      "endMs": 1205240,
+      "text": "agora para ele, assim que ele terminar"
+    },
+    {
+      "id": 605,
+      "startMs": 1203159,
+      "endMs": 1209320,
+      "text": "aqui, ó, vou dar um esc aqui e vou falar"
+    },
+    {
+      "id": 606,
+      "startMs": 1205240,
+      "endMs": 1212080,
+      "text": "assim: adicione a memória,"
+    },
+    {
+      "id": 607,
+      "startMs": 1209320,
+      "endMs": 1213960,
+      "text": "memória ao agente. Antes dele adicionar,"
+    },
+    {
+      "id": 608,
+      "startMs": 1212080,
+      "endMs": 1215320,
+      "text": "inclusive, pessoal, vou deixar antes de"
+    },
+    {
+      "id": 609,
+      "startMs": 1213960,
+      "endMs": 1217760,
+      "text": "adicionar só para mostrar para você como"
+    },
+    {
+      "id": 610,
+      "startMs": 1215320,
+      "endMs": 1219280,
+      "text": "é que é que ele tá, né? Vou tirar aqui"
+    },
+    {
+      "id": 611,
+      "startMs": 1217760,
+      "endMs": 1221039,
+      "text": "dv,"
+    },
+    {
+      "id": 612,
+      "startMs": 1219280,
+      "endMs": 1223720,
+      "text": "vou colocar minha chave de API e o"
+    },
+    {
+      "id": 613,
+      "startMs": 1221039,
+      "endMs": 1225880,
+      "text": "Tavly, que ele falou aqui, Tavly API"
+    },
+    {
+      "id": 614,
+      "startMs": 1223720,
+      "endMs": 1227320,
+      "text": "key. Beleza? Então, já coloquei aqui no"
+    },
+    {
+      "id": 615,
+      "startMs": 1225880,
+      "endMs": 1229280,
+      "text": "meu dot envy as informações que"
+    },
+    {
+      "id": 616,
+      "startMs": 1227320,
+      "endMs": 1232720,
+      "text": "precisava antes de eu rodar ali, ó."
+    },
+    {
+      "id": 617,
+      "startMs": 1229280,
+      "endMs": 1234320,
+      "text": "Bandev. Deixa ele rodar aqui. Eh, antes"
+    },
+    {
+      "id": 618,
+      "startMs": 1232720,
+      "endMs": 1235559,
+      "text": "de eu mostrar para você a ideia dele"
+    },
+    {
+      "id": 619,
+      "startMs": 1234320,
+      "endMs": 1238080,
+      "text": "colocar memória, como é que é que vai"
+    },
+    {
+      "id": 620,
+      "startMs": 1235559,
+      "endMs": 1241440,
+      "text": "funcionar sem a memória, tá? Então, ó,"
+    },
+    {
+      "id": 621,
+      "startMs": 1238080,
+      "endMs": 1243440,
+      "text": "abri aqui. Vamos trazer o estúdio, a"
+    },
+    {
+      "id": 622,
+      "startMs": 1241440,
+      "endMs": 1244720,
+      "text": "vida, tá aqui o research. Então, sem a"
+    },
+    {
+      "id": 623,
+      "startMs": 1243440,
+      "endMs": 1246640,
+      "text": "memória, funciona o seguinte, se eu"
+    },
+    {
+      "id": 624,
+      "startMs": 1244720,
+      "endMs": 1247919,
+      "text": "colocar uma mensagem aqui, inclusive eu"
+    },
+    {
+      "id": 625,
+      "startMs": 1246640,
+      "endMs": 1249159,
+      "text": "posso até mudar os modelos aqui e tudo"
+    },
+    {
+      "id": 626,
+      "startMs": 1247919,
+      "endMs": 1251480,
+      "text": "mais, se eu botar uma mensagem aqui, ele"
+    },
+    {
+      "id": 627,
+      "startMs": 1249159,
+      "endMs": 1252720,
+      "text": "vai funcionar, mas como não tem memória,"
+    },
+    {
+      "id": 628,
+      "startMs": 1251480,
+      "endMs": 1254760,
+      "text": "quando eu fechar isso daqui e voltar,"
+    },
+    {
+      "id": 629,
+      "startMs": 1252720,
+      "endMs": 1257159,
+      "text": "não existe mais. Não vai existir mais"
+    },
+    {
+      "id": 630,
+      "startMs": 1254760,
+      "endMs": 1258400,
+      "text": "nada aqui com a memória, que assim, ó,"
+    },
+    {
+      "id": 631,
+      "startMs": 1257159,
+      "endMs": 1260159,
+      "text": "adiciona a memória, a gente deixa ele"
+    },
+    {
+      "id": 632,
+      "startMs": 1258400,
+      "endMs": 1261520,
+      "text": "trabalhar. Com a memória, vai ficar mais"
+    },
+    {
+      "id": 633,
+      "startMs": 1260159,
+      "endMs": 1263320,
+      "text": "legal, porque daí eu vou ter um"
+    },
+    {
+      "id": 634,
+      "startMs": 1261520,
+      "endMs": 1266280,
+      "text": "resultado aqui guardando as minhas"
+    },
+    {
+      "id": 635,
+      "startMs": 1263320,
+      "endMs": 1267799,
+      "text": "pesquisas. Vou até desativar e, aliás,"
+    },
+    {
+      "id": 636,
+      "startMs": 1266280,
+      "endMs": 1269640,
+      "text": "não, eu quero ativar porque eu quero"
+    },
+    {
+      "id": 637,
+      "startMs": 1267799,
+      "endMs": 1270919,
+      "text": "mostrar para você como que isso daqui"
+    },
+    {
+      "id": 638,
+      "startMs": 1269640,
+      "endMs": 1273360,
+      "text": "vai funcionar depois no projeto. Até"
+    },
+    {
+      "id": 639,
+      "startMs": 1270919,
+      "endMs": 1274799,
+      "text": "agora a gente viu no estúdio, tá? E e"
+    },
+    {
+      "id": 640,
+      "startMs": 1273360,
+      "endMs": 1277440,
+      "text": "podemos já falar essa parte enquanto ele"
+    },
+    {
+      "id": 641,
+      "startMs": 1274799,
+      "endMs": 1279799,
+      "text": "tá trabalhando ali no seu projeto. Você"
+    },
+    {
+      "id": 642,
+      "startMs": 1277440,
+      "endMs": 1281240,
+      "text": "vai tá querendo entrar na IPI dele. É"
+    },
+    {
+      "id": 643,
+      "startMs": 1279799,
+      "endMs": 1282840,
+      "text": "via Swagger que ele vai mostrar para"
+    },
+    {
+      "id": 644,
+      "startMs": 1281240,
+      "endMs": 1284080,
+      "text": "você toda a documentação. E no seu"
+    },
+    {
+      "id": 645,
+      "startMs": 1282840,
+      "endMs": 1286480,
+      "text": "projeto é assim que vai funcionar. Você"
+    },
+    {
+      "id": 646,
+      "startMs": 1284080,
+      "endMs": 1288320,
+      "text": "vai criar tudo ali com Mra, vai deixar"
+    },
+    {
+      "id": 647,
+      "startMs": 1286480,
+      "endMs": 1289840,
+      "text": "tudo redondinho, trabalha no estúdio"
+    },
+    {
+      "id": 648,
+      "startMs": 1288320,
+      "endMs": 1291600,
+      "text": "mesmo, vai testando. Pô, testei a"
+    },
+    {
+      "id": 649,
+      "startMs": 1289840,
+      "endMs": 1293760,
+      "text": "ferramenta, testei. Você pode testar"
+    },
+    {
+      "id": 650,
+      "startMs": 1291600,
+      "endMs": 1296520,
+      "text": "isolado, né? Não sei se você percebeu,"
+    },
+    {
+      "id": 651,
+      "startMs": 1293760,
+      "endMs": 1298200,
+      "text": "mas você pode testar isolado. Deixa eu"
+    },
+    {
+      "id": 652,
+      "startMs": 1296520,
+      "endMs": 1300520,
+      "text": "mostrar aqui para você. Você pode vir"
+    },
+    {
+      "id": 653,
+      "startMs": 1298200,
+      "endMs": 1301919,
+      "text": "aqui e testar só a tool, por exemplo, ó."
+    },
+    {
+      "id": 654,
+      "startMs": 1300520,
+      "endMs": 1303520,
+      "text": "Só o Tevly Search. Você vai colocar"
+    },
+    {
+      "id": 655,
+      "startMs": 1301919,
+      "endMs": 1304799,
+      "text": "query aqui de pesquisa, ele vai fazer"
+    },
+    {
+      "id": 656,
+      "startMs": 1303520,
+      "endMs": 1306320,
+      "text": "pesquisa e vai retornar aqui para você."
+    },
+    {
+      "id": 657,
+      "startMs": 1304799,
+      "endMs": 1307840,
+      "text": "Retornou, tá funcionando atual. Então"
+    },
+    {
+      "id": 658,
+      "startMs": 1306320,
+      "endMs": 1310039,
+      "text": "você pode fazer tudo isoladinho,"
+    },
+    {
+      "id": 659,
+      "startMs": 1307840,
+      "endMs": 1311279,
+      "text": "workflow isolado, mas no final do dia,"
+    },
+    {
+      "id": 660,
+      "startMs": 1310039,
+      "endMs": 1313000,
+      "text": "provavelmente você vai estar querendo"
+    },
+    {
+      "id": 661,
+      "startMs": 1311279,
+      "endMs": 1315159,
+      "text": "fazer um agente que trabalha com outro"
+    },
+    {
+      "id": 662,
+      "startMs": 1313000,
+      "endMs": 1316320,
+      "text": "agente, que conversa entre si, que troca"
+    },
+    {
+      "id": 663,
+      "startMs": 1315159,
+      "endMs": 1318480,
+      "text": "informação. Você vai querer fazer uma"
+    },
+    {
+      "id": 664,
+      "startMs": 1316320,
+      "endMs": 1320000,
+      "text": "estrutura complexa, que são workflows."
+    },
+    {
+      "id": 665,
+      "startMs": 1318480,
+      "endMs": 1322400,
+      "text": "Você vai querer estudar isso no final. E"
+    },
+    {
+      "id": 666,
+      "startMs": 1320000,
+      "endMs": 1324120,
+      "text": "aí você vai executar o workflow através"
+    },
+    {
+      "id": 667,
+      "startMs": 1322400,
+      "endMs": 1326279,
+      "text": "de uma chamada aqui, ó. Você pode"
+    },
+    {
+      "id": 668,
+      "startMs": 1324120,
+      "endMs": 1328559,
+      "text": "executar as skills, workflows, os"
+    },
+    {
+      "id": 669,
+      "startMs": 1326279,
+      "endMs": 1331640,
+      "text": "processors, a memória. Você pode estudar"
+    },
+    {
+      "id": 670,
+      "startMs": 1328559,
+      "endMs": 1334640,
+      "text": "eh os scorings, os a observabilidade, os"
+    },
+    {
+      "id": 671,
+      "startMs": 1331640,
+      "endMs": 1336799,
+      "text": "logs, tudo tá aqui. Ou seja, entende"
+    },
+    {
+      "id": 672,
+      "startMs": 1334640,
+      "endMs": 1339039,
+      "text": "como que isso aqui é uma experiência de"
+    },
+    {
+      "id": 673,
+      "startMs": 1336799,
+      "endMs": 1341240,
+      "text": "desenvolvedor forte, isso daqui tá bem"
+    },
+    {
+      "id": 674,
+      "startMs": 1339039,
+      "endMs": 1343039,
+      "text": "robusto, tá interessante demais para se"
+    },
+    {
+      "id": 675,
+      "startMs": 1341240,
+      "endMs": 1344640,
+      "text": "trabalhar. É isso que eu queria mostrar"
+    },
+    {
+      "id": 676,
+      "startMs": 1343039,
+      "endMs": 1347440,
+      "text": "para você. Espero que isso aqui esteja"
+    },
+    {
+      "id": 677,
+      "startMs": 1344640,
+      "endMs": 1349440,
+      "text": "fazendo muito sentido para você. Então,"
+    },
+    {
+      "id": 678,
+      "startMs": 1347440,
+      "endMs": 1351880,
+      "text": "deixa eu só fechar esse aqui. Eu vou"
+    },
+    {
+      "id": 679,
+      "startMs": 1349440,
+      "endMs": 1353600,
+      "text": "fechar. Não, não precisa fechar. Vou"
+    },
+    {
+      "id": 680,
+      "startMs": 1351880,
+      "endMs": 1355919,
+      "text": "fechar só para poder eu ler com mais"
+    },
+    {
+      "id": 681,
+      "startMs": 1353600,
+      "endMs": 1358480,
+      "text": "calma aqui o onde que é que ele"
+    },
+    {
+      "id": 682,
+      "startMs": 1355919,
+      "endMs": 1360240,
+      "text": "possivelmente parou. Kill. Fecho essa"
+    },
+    {
+      "id": 683,
+      "startMs": 1358480,
+      "endMs": 1362039,
+      "text": "lateral. E agora vamos aqui, ó. Então,"
+    },
+    {
+      "id": 684,
+      "startMs": 1360240,
+      "endMs": 1365080,
+      "text": "ele tá dizendo que ele trabalhou, que"
+    },
+    {
+      "id": 685,
+      "startMs": 1362039,
+      "endMs": 1366679,
+      "text": "ele colocou a memória, mudou para 1.5"
+    },
+    {
+      "id": 686,
+      "startMs": 1365080,
+      "endMs": 1368679,
+      "text": "flash, normal, normal, inteligência"
+    },
+    {
+      "id": 687,
+      "startMs": 1366679,
+      "endMs": 1370760,
+      "text": "artificial. Ele acha que é 1.5 flash. E"
+    },
+    {
+      "id": 688,
+      "startMs": 1368679,
+      "endMs": 1373520,
+      "text": "aí ele falou: \"Não, cara, alguém mexeu"
+    },
+    {
+      "id": 689,
+      "startMs": 1370760,
+      "endMs": 1375640,
+      "text": "ali no que eu mexi, não é o 2.5 que eu"
+    },
+    {
+      "id": 690,
+      "startMs": 1373520,
+      "endMs": 1377640,
+      "text": "quero, mas eu posso mudar pela interface"
+    },
+    {
+      "id": 691,
+      "startMs": 1375640,
+      "endMs": 1380240,
+      "text": "a qualquer momento.\" Aqui está a memória"
+    },
+    {
+      "id": 692,
+      "startMs": 1377640,
+      "endMs": 1382080,
+      "text": "com opções de últimas. Eu ia colocar na"
+    },
+    {
+      "id": 693,
+      "startMs": 1380240,
+      "endMs": 1384200,
+      "text": "mão, né? New memory. Eu não preciso de"
+    },
+    {
+      "id": 694,
+      "startMs": 1382080,
+      "endMs": 1386080,
+      "text": "opções, por exemplo, ah, as últimas 20,"
+    },
+    {
+      "id": 695,
+      "startMs": 1384200,
+      "endMs": 1387679,
+      "text": "não. Posso deixar tudo se eu quiser, não"
+    },
+    {
+      "id": 696,
+      "startMs": 1386080,
+      "endMs": 1389360,
+      "text": "tem problema, tá? Mas é só para você"
+    },
+    {
+      "id": 697,
+      "startMs": 1387679,
+      "endMs": 1391200,
+      "text": "entender como que funciona. O restante"
+    },
+    {
+      "id": 698,
+      "startMs": 1389360,
+      "endMs": 1394200,
+      "text": "da memória. Já estava aqui, o storage já"
+    },
+    {
+      "id": 699,
+      "startMs": 1391200,
+      "endMs": 1395760,
+      "text": "estava colocado aqui como SK. É o que a"
+    },
+    {
+      "id": 700,
+      "startMs": 1394200,
+      "endMs": 1397440,
+      "text": "gente está usando aqui, é o SK Lite."
+    },
+    {
+      "id": 701,
+      "startMs": 1395760,
+      "endMs": 1398720,
+      "text": "Poderia mudar também em algum outro"
+    },
+    {
+      "id": 702,
+      "startMs": 1397440,
+      "endMs": 1401360,
+      "text": "momento, tá bem?"
+    },
+    {
+      "id": 703,
+      "startMs": 1398720,
+      "endMs": 1402840,
+      "text": "Agora que já tá tudo feito, ele fez, ele"
+    },
+    {
+      "id": 704,
+      "startMs": 1401360,
+      "endMs": 1405320,
+      "text": "explicou para mim o que tá feito. O que"
+    },
+    {
+      "id": 705,
+      "startMs": 1402840,
+      "endMs": 1406760,
+      "text": "eu gosto de fazer, se eu tivesse isso"
+    },
+    {
+      "id": 706,
+      "startMs": 1405320,
+      "endMs": 1407760,
+      "text": "daqui dentro de um projeto mesmo, eu"
+    },
+    {
+      "id": 707,
+      "startMs": 1406760,
+      "endMs": 1410320,
+      "text": "estou estudando isso, eu preciso"
+    },
+    {
+      "id": 708,
+      "startMs": 1407760,
+      "endMs": 1412320,
+      "text": "aprender, é crie um resumo do que você"
+    },
+    {
+      "id": 709,
+      "startMs": 1410320,
+      "endMs": 1414400,
+      "text": "fez e documente ou documente o que você"
+    },
+    {
+      "id": 710,
+      "startMs": 1412320,
+      "endMs": 1416919,
+      "text": "fez com com riqueza de detalhes para que"
+    },
+    {
+      "id": 711,
+      "startMs": 1414400,
+      "endMs": 1419039,
+      "text": "eu possa estudar depois ou ler depois e"
+    },
+    {
+      "id": 712,
+      "startMs": 1416919,
+      "endMs": 1420600,
+      "text": "me lembrar de tudo que foi feito aqui. E"
+    },
+    {
+      "id": 713,
+      "startMs": 1419039,
+      "endMs": 1422480,
+      "text": "ele vai criar esse documento e deixar no"
+    },
+    {
+      "id": 714,
+      "startMs": 1420600,
+      "endMs": 1424760,
+      "text": "meu projeto. Então isso é que eu uso a"
+    },
+    {
+      "id": 715,
+      "startMs": 1422480,
+      "endMs": 1426360,
+      "text": "IA para trabalho e estudo juntos, porque"
+    },
+    {
+      "id": 716,
+      "startMs": 1424760,
+      "endMs": 1427600,
+      "text": "eu preciso ir evoluindo juntos. Como eu"
+    },
+    {
+      "id": 717,
+      "startMs": 1426360,
+      "endMs": 1430000,
+      "text": "falei, eu não vou ficar digitando a"
+    },
+    {
+      "id": 718,
+      "startMs": 1427600,
+      "endMs": 1431400,
+      "text": "linha de código, não precisa, mas eu"
+    },
+    {
+      "id": 719,
+      "startMs": 1430000,
+      "endMs": 1432960,
+      "text": "preciso aprender, eu preciso tomar boas"
+    },
+    {
+      "id": 720,
+      "startMs": 1431400,
+      "endMs": 1434799,
+      "text": "decisões e preciso ver se isso realmente"
+    },
+    {
+      "id": 721,
+      "startMs": 1432960,
+      "endMs": 1436440,
+      "text": "faz sentido para mim ou não. Isso aí é"
+    },
+    {
+      "id": 722,
+      "startMs": 1434799,
+      "endMs": 1438200,
+      "text": "uma coisa que você tem que decidir, né?"
+    },
+    {
+      "id": 723,
+      "startMs": 1436440,
+      "endMs": 1439159,
+      "text": "Aí a pode falar, é o master que você vai"
+    },
+    {
+      "id": 724,
+      "startMs": 1438200,
+      "endMs": 1440679,
+      "text": "usar no seu projeto. Você vai olhar e"
+    },
+    {
+      "id": 725,
+      "startMs": 1439159,
+      "endMs": 1442400,
+      "text": "vai falar: \"Não faz sentido nenhum, meu"
+    },
+    {
+      "id": 726,
+      "startMs": 1440679,
+      "endMs": 1444480,
+      "text": "projeto tudo tá em Python, eu já tenho"
+    },
+    {
+      "id": 727,
+      "startMs": 1442400,
+      "endMs": 1446200,
+      "text": "um monte de crei\". Que porcaria de"
+    },
+    {
+      "id": 728,
+      "startMs": 1444480,
+      "endMs": 1449039,
+      "text": "masterra, entende? Como que você tem que"
+    },
+    {
+      "id": 729,
+      "startMs": 1446200,
+      "endMs": 1450200,
+      "text": "tomar essa decisão? Então, ó, bandev."
+    },
+    {
+      "id": 730,
+      "startMs": 1449039,
+      "endMs": 1451240,
+      "text": "Agora que já tá funcionando, deixa eu"
+    },
+    {
+      "id": 731,
+      "startMs": 1450200,
+      "endMs": 1453400,
+      "text": "mostrar para você como que esse"
+    },
+    {
+      "id": 732,
+      "startMs": 1451240,
+      "endMs": 1455200,
+      "text": "researcher ele pode trabalhar com você"
+    },
+    {
+      "id": 733,
+      "startMs": 1453400,
+      "endMs": 1457159,
+      "text": "no seu dia a dia. Então, você quer"
+    },
+    {
+      "id": 734,
+      "startMs": 1455200,
+      "endMs": 1461799,
+      "text": "aprender algo novo que acabou de sair aí"
+    },
+    {
+      "id": 735,
+      "startMs": 1457159,
+      "endMs": 1463520,
+      "text": "na internet? Acabou de sair MC Web MCP."
+    },
+    {
+      "id": 736,
+      "startMs": 1461799,
+      "endMs": 1465919,
+      "text": "Web MCP é uma ideia que ainda está em"
+    },
+    {
+      "id": 737,
+      "startMs": 1463520,
+      "endMs": 1469799,
+      "text": "construção, vai vir aí pro HTML, ele vai"
+    },
+    {
+      "id": 738,
+      "startMs": 1465919,
+      "endMs": 1471480,
+      "text": "vir aí para compor toda a ideia da da"
+    },
+    {
+      "id": 739,
+      "startMs": 1469799,
+      "endMs": 1474520,
+      "text": "inteligência artificial estando dentro"
+    },
+    {
+      "id": 740,
+      "startMs": 1471480,
+      "endMs": 1476840,
+      "text": "da parte toda web. O que é esse web MCP?"
+    },
+    {
+      "id": 741,
+      "startMs": 1474520,
+      "endMs": 1479840,
+      "text": "Então, me explica aí. Ele vai procurar"
+    },
+    {
+      "id": 742,
+      "startMs": 1476840,
+      "endMs": 1483360,
+      "text": "na Tavly search o web MCP e ele vai"
+    },
+    {
+      "id": 743,
+      "startMs": 1479840,
+      "endMs": 1486399,
+      "text": "trazer lá standard that lets AI agent"
+    },
+    {
+      "id": 744,
+      "startMs": 1483360,
+      "endMs": 1489159,
+      "text": "call website functions. Legal, é uma"
+    },
+    {
+      "id": 745,
+      "startMs": 1486399,
+      "endMs": 1490840,
+      "text": "ideia, é um early preview, tá vindo aí,"
+    },
+    {
+      "id": 746,
+      "startMs": 1489159,
+      "endMs": 1493399,
+      "text": "não tá funcionando ainda, mas é algo"
+    },
+    {
+      "id": 747,
+      "startMs": 1490840,
+      "endMs": 1495520,
+      "text": "super novo, super recente. Você não tem"
+    },
+    {
+      "id": 748,
+      "startMs": 1493399,
+      "endMs": 1497600,
+      "text": "opiniões de outras pessoas ainda. Você"
+    },
+    {
+      "id": 749,
+      "startMs": 1495520,
+      "endMs": 1498679,
+      "text": "quer formar a sua própria opinião."
+    },
+    {
+      "id": 750,
+      "startMs": 1497600,
+      "endMs": 1501120,
+      "text": "Então, você acabou de fazer um"
+    },
+    {
+      "id": 751,
+      "startMs": 1498679,
+      "endMs": 1503200,
+      "text": "researcher que vai falar o que é, por"
+    },
+    {
+      "id": 752,
+      "startMs": 1501120,
+      "endMs": 1505480,
+      "text": "que ele existe, quem está por trás"
+    },
+    {
+      "id": 753,
+      "startMs": 1503200,
+      "endMs": 1507799,
+      "text": "disso, quem é que se beneficia, quem não"
+    },
+    {
+      "id": 754,
+      "startMs": 1505480,
+      "endMs": 1510880,
+      "text": "se beneficia, quando foi criado, quando"
+    },
+    {
+      "id": 755,
+      "startMs": 1507799,
+      "endMs": 1514039,
+      "text": "usar, quando não usar, como usar, como"
+    },
+    {
+      "id": 756,
+      "startMs": 1510880,
+      "endMs": 1516039,
+      "text": "não usar, por usar e etc, etc. Você pode"
+    },
+    {
+      "id": 757,
+      "startMs": 1514039,
+      "endMs": 1517880,
+      "text": "adicionar mais perguntas aqui. Cara, tem"
+    },
+    {
+      "id": 758,
+      "startMs": 1516039,
+      "endMs": 1519919,
+      "text": "uma penca de perguntas que você pode"
+    },
+    {
+      "id": 759,
+      "startMs": 1517880,
+      "endMs": 1521840,
+      "text": "colocar e a boas as boas perguntas vão"
+    },
+    {
+      "id": 760,
+      "startMs": 1519919,
+      "endMs": 1523720,
+      "text": "gerar respostas que vão fazer você"
+    },
+    {
+      "id": 761,
+      "startMs": 1521840,
+      "endMs": 1526200,
+      "text": "refletir sobre aquilo. Ao final da"
+    },
+    {
+      "id": 762,
+      "startMs": 1523720,
+      "endMs": 1527520,
+      "text": "leitura desse seu artigo personalizado,"
+    },
+    {
+      "id": 763,
+      "startMs": 1526200,
+      "endMs": 1529279,
+      "text": "que tá, na verdade, são só perguntas"
+    },
+    {
+      "id": 764,
+      "startMs": 1527520,
+      "endMs": 1530720,
+      "text": "para você poder entender mais, ao final"
+    },
+    {
+      "id": 765,
+      "startMs": 1529279,
+      "endMs": 1533080,
+      "text": "dessa leitura, você vai ter uma"
+    },
+    {
+      "id": 766,
+      "startMs": 1530720,
+      "endMs": 1534840,
+      "text": "informação riquíssima e você vai tomar"
+    },
+    {
+      "id": 767,
+      "startMs": 1533080,
+      "endMs": 1536279,
+      "text": "suas decisões. Você vai entender se"
+    },
+    {
+      "id": 768,
+      "startMs": 1534840,
+      "endMs": 1537679,
+      "text": "aquilo funciona ou não, se tá fazendo"
+    },
+    {
+      "id": 769,
+      "startMs": 1536279,
+      "endMs": 1538919,
+      "text": "sentido ou não para você, se é só um"
+    },
+    {
+      "id": 770,
+      "startMs": 1537679,
+      "endMs": 1542159,
+      "text": "hype, se é só um barulho, se é uma coisa"
+    },
+    {
+      "id": 771,
+      "startMs": 1538919,
+      "endMs": 1543480,
+      "text": "que ainda não tá pronta e tudo mais."
+    },
+    {
+      "id": 772,
+      "startMs": 1542159,
+      "endMs": 1544760,
+      "text": "Como eu falei, existem mais perguntas"
+    },
+    {
+      "id": 773,
+      "startMs": 1543480,
+      "endMs": 1546640,
+      "text": "que eu colocaria aqui. Com certeza"
+    },
+    {
+      "id": 774,
+      "startMs": 1544760,
+      "endMs": 1548600,
+      "text": "colocaria muito mais perguntas aqui, mas"
+    },
+    {
+      "id": 775,
+      "startMs": 1546640,
+      "endMs": 1550159,
+      "text": "pro nosso teste aqui valeu muito. Olha"
+    },
+    {
+      "id": 776,
+      "startMs": 1548600,
+      "endMs": 1552640,
+      "text": "só como que essa ferramenta então vai"
+    },
+    {
+      "id": 777,
+      "startMs": 1550159,
+      "endMs": 1555440,
+      "text": "mostrar para você toda a ideia de você"
+    },
+    {
+      "id": 778,
+      "startMs": 1552640,
+      "endMs": 1558880,
+      "text": "de você trabalhar com temperatura, top,"
+    },
+    {
+      "id": 779,
+      "startMs": 1555440,
+      "endMs": 1560080,
+      "text": "outras e configurações avançadas que"
+    },
+    {
+      "id": 780,
+      "startMs": 1558880,
+      "endMs": 1562120,
+      "text": "você vai ter aqui para você poder"
+    },
+    {
+      "id": 781,
+      "startMs": 1560080,
+      "endMs": 1563799,
+      "text": "trabalhar com seu com a sua inteligência"
+    },
+    {
+      "id": 782,
+      "startMs": 1562120,
+      "endMs": 1566000,
+      "text": "artificial. Você é modo streamer, seja"
+    },
+    {
+      "id": 783,
+      "startMs": 1563799,
+      "endMs": 1568120,
+      "text": "para gerar alguma coisa de uma vez."
+    },
+    {
+      "id": 784,
+      "startMs": 1566000,
+      "endMs": 1570679,
+      "text": "Memória, tracing, toda a parte da"
+    },
+    {
+      "id": 785,
+      "startMs": 1568120,
+      "endMs": 1572559,
+      "text": "observabilidade tá funcionando aqui. Tá"
+    },
+    {
+      "id": 786,
+      "startMs": 1570679,
+      "endMs": 1574440,
+      "text": "vendo que a gente deixou lá funcional?"
+    },
+    {
+      "id": 787,
+      "startMs": 1572559,
+      "endMs": 1575919,
+      "text": "Então aqui você consegue ver tudo o que"
+    },
+    {
+      "id": 788,
+      "startMs": 1574440,
+      "endMs": 1578000,
+      "text": "que é tá utilizando, quando tá"
+    },
+    {
+      "id": 789,
+      "startMs": 1575919,
+      "endMs": 1579720,
+      "text": "utilizando, como tá utilizando, se você"
+    },
+    {
+      "id": 790,
+      "startMs": 1578000,
+      "endMs": 1580760,
+      "text": "precisar de criar datasets, workspace,"
+    },
+    {
+      "id": 791,
+      "startMs": 1579720,
+      "endMs": 1582640,
+      "text": "como eu já falei, todas essas"
+    },
+    {
+      "id": 792,
+      "startMs": 1580760,
+      "endMs": 1584080,
+      "text": "informações. Então, no final do dia, o"
+    },
+    {
+      "id": 793,
+      "startMs": 1582640,
+      "endMs": 1586840,
+      "text": "que que a gente tá querendo entender"
+    },
+    {
+      "id": 794,
+      "startMs": 1584080,
+      "endMs": 1590159,
+      "text": "aqui? Construir agentes de IA pode ser"
+    },
+    {
+      "id": 795,
+      "startMs": 1586840,
+      "endMs": 1591919,
+      "text": "um pesadelo por três motivos. Llela é"
+    },
+    {
+      "id": 796,
+      "startMs": 1590159,
+      "endMs": 1593600,
+      "text": "imprevisível. Os agentes eles podem"
+    },
+    {
+      "id": 797,
+      "startMs": 1591919,
+      "endMs": 1595440,
+      "text": "entrar num loop infinito, você precisa"
+    },
+    {
+      "id": 798,
+      "startMs": 1593600,
+      "endMs": 1597679,
+      "text": "sair disso ou tomar um cuidado. E você"
+    },
+    {
+      "id": 799,
+      "startMs": 1595440,
+      "endMs": 1599840,
+      "text": "pode fazer ou precisa às vezes fazer"
+    },
+    {
+      "id": 800,
+      "startMs": 1597679,
+      "endMs": 1601520,
+      "text": "pipelines complexos com workflows, com"
+    },
+    {
+      "id": 801,
+      "startMs": 1599840,
+      "endMs": 1603080,
+      "text": "rag e tudo mais. Quando você tem uma"
+    },
+    {
+      "id": 802,
+      "startMs": 1601520,
+      "endMs": 1604640,
+      "text": "ferramenta dessa que está trazendo uma"
+    },
+    {
+      "id": 803,
+      "startMs": 1603080,
+      "endMs": 1607760,
+      "text": "experiência de desenvolvimento para você"
+    },
+    {
+      "id": 804,
+      "startMs": 1604640,
+      "endMs": 1610360,
+      "text": "mais redondinha, você consegue focar"
+    },
+    {
+      "id": 805,
+      "startMs": 1607760,
+      "endMs": 1612720,
+      "text": "mais nos problemas e menos em questão de"
+    },
+    {
+      "id": 806,
+      "startMs": 1610360,
+      "endMs": 1616399,
+      "text": "configurar a ferramenta. Imagina AISD"
+    },
+    {
+      "id": 807,
+      "startMs": 1612720,
+      "endMs": 1617960,
+      "text": "Versolveria isso daqui? Ah, ok. Trazendo"
+    },
+    {
+      "id": 808,
+      "startMs": 1616399,
+      "endMs": 1620279,
+      "text": "outras coisas pro universo aqui,"
+    },
+    {
+      "id": 809,
+      "startMs": 1617960,
+      "endMs": 1621840,
+      "text": "trazendo outras arquiteturas. Sim. Só"
+    },
+    {
+      "id": 810,
+      "startMs": 1620279,
+      "endMs": 1623279,
+      "text": "que o trabalho disso pode ser reduzido"
+    },
+    {
+      "id": 811,
+      "startMs": 1621840,
+      "endMs": 1624640,
+      "text": "se você tem uma ferramenta. É uma"
+    },
+    {
+      "id": 812,
+      "startMs": 1623279,
+      "endMs": 1626399,
+      "text": "ferramenta que tá pronta, não está"
+    },
+    {
+      "id": 813,
+      "startMs": 1624640,
+      "endMs": 1627919,
+      "text": "pronta, a gente precisa ir com calma. É"
+    },
+    {
+      "id": 814,
+      "startMs": 1626399,
+      "endMs": 1629960,
+      "text": "uma ferramenta que ajuda você a entender"
+    },
+    {
+      "id": 815,
+      "startMs": 1627919,
+      "endMs": 1631799,
+      "text": "bem passo a passo, toda a ideia de um"
+    },
+    {
+      "id": 816,
+      "startMs": 1629960,
+      "endMs": 1632960,
+      "text": "TypeScript, tudo tipadinho. Sim,"
+    },
+    {
+      "id": 817,
+      "startMs": 1631799,
+      "endMs": 1635279,
+      "text": "experiência de desenvolvimento para"
+    },
+    {
+      "id": 818,
+      "startMs": 1632960,
+      "endMs": 1636600,
+      "text": "Typeescript maravilhosa, mas não adianta"
+    },
+    {
+      "id": 819,
+      "startMs": 1635279,
+      "endMs": 1638279,
+      "text": "você querer achar que ela vai resolver"
+    },
+    {
+      "id": 820,
+      "startMs": 1636600,
+      "endMs": 1640559,
+      "text": "tudo pra tua vida agora, nem vai."
+    },
+    {
+      "id": 821,
+      "startMs": 1638279,
+      "endMs": 1641799,
+      "text": "Inclusive, já comenta aqui se ela fez"
+    },
+    {
+      "id": 822,
+      "startMs": 1640559,
+      "endMs": 1643440,
+      "text": "sentido para você ou se você tá usando"
+    },
+    {
+      "id": 823,
+      "startMs": 1641799,
+      "endMs": 1645159,
+      "text": "outras ferramentas, se você resolveria"
+    },
+    {
+      "id": 824,
+      "startMs": 1643440,
+      "endMs": 1646440,
+      "text": "esses problemas de outra forma. Coloca"
+    },
+    {
+      "id": 825,
+      "startMs": 1645159,
+      "endMs": 1648240,
+      "text": "aí nos comentários também pr gente para"
+    },
+    {
+      "id": 826,
+      "startMs": 1646440,
+      "endMs": 1651720,
+      "text": "deixar esse esse vídeo mais rico, né?"
+    },
+    {
+      "id": 827,
+      "startMs": 1648240,
+      "endMs": 1653279,
+      "text": "Mas faça o seguinte teste. Bun X, abre o"
+    },
+    {
+      "id": 828,
+      "startMs": 1651720,
+      "endMs": 1657480,
+      "text": "seu terminal aí, né? Se você tá usando o"
+    },
+    {
+      "id": 829,
+      "startMs": 1653279,
+      "endMs": 1662720,
+      "text": "ban ou não, se for npm, o node npx e"
+    },
+    {
+      "id": 830,
+      "startMs": 1657480,
+      "endMs": 1664600,
+      "text": "create npx create traço mastra run npx"
+    },
+    {
+      "id": 831,
+      "startMs": 1662720,
+      "endMs": 1666440,
+      "text": "create traço masterra. Teste aí, faça"
+    },
+    {
+      "id": 832,
+      "startMs": 1664600,
+      "endMs": 1668320,
+      "text": "esse teste, veja se para você tá"
+    },
+    {
+      "id": 833,
+      "startMs": 1666440,
+      "endMs": 1670919,
+      "text": "funcionando, tá? É um teste que eu achei"
+    },
+    {
+      "id": 834,
+      "startMs": 1668320,
+      "endMs": 1672200,
+      "text": "bem legal aqui. Mas essa ideia de"
+    },
+    {
+      "id": 835,
+      "startMs": 1670919,
+      "endMs": 1674159,
+      "text": "orquestrar agentes de inteligência"
+    },
+    {
+      "id": 836,
+      "startMs": 1672200,
+      "endMs": 1676480,
+      "text": "artificial é uma ideia que ainda está"
+    },
+    {
+      "id": 837,
+      "startMs": 1674159,
+      "endMs": 1678919,
+      "text": "sendo e trabalhada, né? A gente ainda tá"
+    },
+    {
+      "id": 838,
+      "startMs": 1676480,
+      "endMs": 1681200,
+      "text": "entendendo como que funciona isso. Nós"
+    },
+    {
+      "id": 839,
+      "startMs": 1678919,
+      "endMs": 1683440,
+      "text": "estamos aprendendo com isso, descobrindo"
+    },
+    {
+      "id": 840,
+      "startMs": 1681200,
+      "endMs": 1685200,
+      "text": "imprevisibilidades, problemas que antes"
+    },
+    {
+      "id": 841,
+      "startMs": 1683440,
+      "endMs": 1686880,
+      "text": "não tinham, que agora estão tendo. Tudo"
+    },
+    {
+      "id": 842,
+      "startMs": 1685200,
+      "endMs": 1690240,
+      "text": "isso a gente tá tentando resolver, não é"
+    },
+    {
+      "id": 843,
+      "startMs": 1686880,
+      "endMs": 1692640,
+      "text": "isso? Você, eu. Então, usar ferramentas"
+    },
+    {
+      "id": 844,
+      "startMs": 1690240,
+      "endMs": 1694840,
+      "text": "como essa sem que você precise"
+    },
+    {
+      "id": 845,
+      "startMs": 1692640,
+      "endMs": 1697559,
+      "text": "reaprender tudo, pô, preciso aprender"
+    },
+    {
+      "id": 846,
+      "startMs": 1694840,
+      "endMs": 1699000,
+      "text": "tudo em Python. Ajuda, né? Tá, tá no pro"
+    },
+    {
+      "id": 847,
+      "startMs": 1697559,
+      "endMs": 1700640,
+      "text": "Script. Que que você precisa aprender?"
+    },
+    {
+      "id": 848,
+      "startMs": 1699000,
+      "endMs": 1701720,
+      "text": "você precisa certamente entender mais"
+    },
+    {
+      "id": 849,
+      "startMs": 1700640,
+      "endMs": 1703399,
+      "text": "sobre agentes. Por isso que eu deixei"
+    },
+    {
+      "id": 850,
+      "startMs": 1701720,
+      "endMs": 1705840,
+      "text": "aquele livro ali. Nem fui eu que"
+    },
+    {
+      "id": 851,
+      "startMs": 1703399,
+      "endMs": 1707760,
+      "text": "escrevi, foi o pessoal que escreveu, nem"
+    },
+    {
+      "id": 852,
+      "startMs": 1705840,
+      "endMs": 1709679,
+      "text": "não é nem cursos meus, nem nada disso,"
+    },
+    {
+      "id": 853,
+      "startMs": 1707760,
+      "endMs": 1711200,
+      "text": "mas faz sentido de você ler, porque eu"
+    },
+    {
+      "id": 854,
+      "startMs": 1709679,
+      "endMs": 1713760,
+      "text": "li todo aquele livro e ele me ajudou"
+    },
+    {
+      "id": 855,
+      "startMs": 1711200,
+      "endMs": 1715399,
+      "text": "muito. Então faz muito sentido. Você tá,"
+    },
+    {
+      "id": 856,
+      "startMs": 1713760,
+      "endMs": 1717720,
+      "text": "você tá trabalhando nesse universo do"
+    },
+    {
+      "id": 857,
+      "startMs": 1715399,
+      "endMs": 1719799,
+      "text": "Node, do Next e tudo mais, faz sentido"
+    },
+    {
+      "id": 858,
+      "startMs": 1717720,
+      "endMs": 1722320,
+      "text": "você ter isso daqui. Vou deixar todos os"
+    },
+    {
+      "id": 859,
+      "startMs": 1719799,
+      "endMs": 1723960,
+      "text": "links aqui para você. NPX Crade Master"
+    },
+    {
+      "id": 860,
+      "startMs": 1722320,
+      "endMs": 1725080,
+      "text": "para você testar aí. me conta sua"
+    },
+    {
+      "id": 861,
+      "startMs": 1723960,
+      "endMs": 1726760,
+      "text": "experiência de desenvolvimento, depois"
+    },
+    {
+      "id": 862,
+      "startMs": 1725080,
+      "endMs": 1728159,
+      "text": "volta no vídeo, conta como que vai ser,"
+    },
+    {
+      "id": 863,
+      "startMs": 1726760,
+      "endMs": 1729559,
+      "text": "como que foi sua experiência, se você tá"
+    },
+    {
+      "id": 864,
+      "startMs": 1728159,
+      "endMs": 1731880,
+      "text": "aprendendo com isso, se tá fazendo"
+    },
+    {
+      "id": 865,
+      "startMs": 1729559,
+      "endMs": 1733880,
+      "text": "sentido para você e se esse vídeo te"
+    },
+    {
+      "id": 866,
+      "startMs": 1731880,
+      "endMs": 1737240,
+      "text": "ajudou a clarear suas ideias, se esse"
+    },
+    {
+      "id": 867,
+      "startMs": 1733880,
+      "endMs": 1740039,
+      "text": "vídeo te deu uma vontade de fazer mais"
+    },
+    {
+      "id": 868,
+      "startMs": 1737240,
+      "endMs": 1741640,
+      "text": "coisas, esse tipo de vídeo te anima,"
+    },
+    {
+      "id": 869,
+      "startMs": 1740039,
+      "endMs": 1743799,
+      "text": "deixa o seu like, deixa o seu"
+    },
+    {
+      "id": 870,
+      "startMs": 1741640,
+      "endMs": 1745640,
+      "text": "comentário, porque ajuda muito o nosso"
+    },
+    {
+      "id": 871,
+      "startMs": 1743799,
+      "endMs": 1747039,
+      "text": "canal e se inscreva para mais vídeos"
+    },
+    {
+      "id": 872,
+      "startMs": 1745640,
+      "endMs": 1748720,
+      "text": "como esse. E eu vou deixar mais vídeos"
+    },
+    {
+      "id": 873,
+      "startMs": 1747039,
+      "endMs": 1750559,
+      "text": "aqui também no final para você assistir,"
+    },
+    {
+      "id": 874,
+      "startMs": 1748720,
+      "endMs": 1754159,
+      "text": "beleza? Um abração do Maicão. Te vejo no"
+    },
+    {
+      "id": 875,
+      "startMs": 1750559,
+      "endMs": 1754159,
+      "text": "próximo. Ciao. Ciao."
+    }
+  ],
+  "createdAt": "2026-02-27T17:04:38.815Z",
+  "updatedAt": "2026-02-27T17:05:10.852Z",
+  "suggestions": [
+    {
+      "startMs": 1402840,
+      "endMs": 1439159,
+      "title": "Aprender com IA: Documentação e Tomada de Decisão",
+      "description": "Explorando como a inteligência artificial pode otimizar o aprendizado e trabalho, documentando cada passo. Reflexões sobre como isso impacta nossas decisões diárias.",
+      "hashtags": [
+        "#Inovação",
+        "#InteligênciaArtificial",
+        "#AprendizadoContínuo"
+      ],
+      "category": "reflexao",
+      "score": 7
+    },
+    {
+      "startMs": 240,
+      "endMs": 31359,
+      "title": "Simplificação no desenvolvimento com Mastra AI",
+      "description": "Conheça o Mastra AI, uma ferramenta que promete simplificar o desenvolvimento de agentes tipados com TypeScript sem complicações desnecessárias. Descubra como ele pode transformar seu projeto!",
+      "hashtags": [
+        "#Desenvolvimento",
+        "#MastraAI",
+        "#Tecnologia"
+      ],
+      "category": "ensino",
+      "score": 6
+    },
+    {
+      "startMs": 103759,
+      "endMs": 164800,
+      "title": "A origem do Mastra AI e sua promessa",
+      "description": "Descubra as raízes do Mastra AI e como ele pode revolucionar a experiência do desenvolvedor com conceitos trazidos por veteranos do Gatsby.",
+      "hashtags": [
+        "#Frameworks",
+        "#Desenvolvedores",
+        "#Inovação"
+      ],
+      "category": "ensino",
+      "score": 5
+    },
+    {
+      "startMs": 354400,
+      "endMs": 384599,
+      "title": "Masterra: Ferramentas Grátis e Poderosas",
+      "description": "Entenda como o Masterra oferece ferramentas poderosas na nuvem que são, em grande parte, gratuitas e como pode beneficiar seu fluxo de trabalho!",
+      "hashtags": [
+        "#Desenvolvimento",
+        "#AI",
+        "#OpenSource"
+      ],
+      "category": "ensino",
+      "score": 5
+    },
+    {
+      "startMs": 488560,
+      "endMs": 527120,
+      "title": "Explore o Masterra Studio: Funcionalidade em Primeira Mão",
+      "description": "Saiba como o Masterra Studio revoluciona a criação de agentes com seu sistema inovador! Explore suas funções principais agora.",
+      "hashtags": [
+        "#MasterraStudio",
+        "#Tecnologia",
+        "#Desenvolvimento"
+      ],
+      "category": "ensino",
+      "score": 5
+    },
+    {
+      "startMs": 1681200,
+      "endMs": 1701720,
+      "title": "Aprendizado sem Reaprender Tudo",
+      "description": "Descubra como utilizar novas ferramentas de IA sem a necessidade de reaprender tudo do zero. Uma abordagem inteligente para desenvolvedores que buscam eficiência.",
+      "hashtags": [
+        "#DesenvolvimentoAI",
+        "#FerramentasInteligentes",
+        "#Aprendizado"
+      ],
+      "category": "ensino",
+      "score": 5
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd C:\\\\Users\\\\NOTEBOOK\\\\Documents\\\\development\\\\testes\\\\VideoCutter:*)",
+      "Bash(wc:*)",
+      "Bash(cd:*)",
+      "Bash(cd /c/Users/NOTEBOOK/Documents/development/testes/VideoCutter && source apps/server/.env && SKIP_INTEGRATION=false OPENAI_API_KEY=\"$OPENAI_API_KEY\" OPENAI_MODEL=\"$OPENAI_MODEL\" npx vitest run apps/server/src/tests/llmService.integration.test.ts --workspace vitest.workspace.ts 2>&1)",
+      "Bash(curl:*)",
+      "Bash(tasklist:*)"
+    ]
+  }
+}
