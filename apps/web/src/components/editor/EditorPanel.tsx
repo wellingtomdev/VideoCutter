@@ -125,24 +125,11 @@ export function EditorPanel({ job }: EditorPanelProps) {
 
       const result = await api.prepare(req);
 
-      // Finalize immediately with offset=0
-      const finalResult = await api.finalize({
-        sourcePath: result.filePath,
-        trimStartMs: result.paddingBeforeMs,
-        trimDurationMs: result.originalDurationMs,
-        audioOffsetMs: 0,
-        jobId: job.id,
-      });
-
-      await refreshJob(job.id);
-      setPrepareResult(null);
+      // Show SyncEditor so user can preview and adjust audio offset before finalizing
+      setPrepareResult(result);
       setCutState('idle');
       setPreparingLabel(null);
-
-      // Offer download
-      if (finalResult.outputPath) {
-        await downloadFile(api.streamUrl(finalResult.outputPath), basename(finalResult.outputPath));
-      }
+      await updateJob(job.id, { status: 'ready' });
     } catch (err) {
       setCutError(err instanceof Error ? err.message : String(err));
       setCutState('error');

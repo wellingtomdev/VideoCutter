@@ -264,9 +264,9 @@ describe('EditorPanel', () => {
     expect(queryByText('Video cortado com sucesso')).toBeNull();
   });
 
-  // ── Cut flow — immediate tab switch + auto-finalize ──
+  // ── Cut flow — prepare then show SyncEditor ──
 
-  it('switches to Cortes tab and finalizes automatically when cutting', async () => {
+  it('switches to Cortes tab and shows SyncEditor after prepare completes', async () => {
     const { api } = await import('../services/api');
     vi.mocked(api.prepare).mockResolvedValue({
       filePath: '/tmp/prepared.mp4',
@@ -274,9 +274,8 @@ describe('EditorPanel', () => {
       paddingAfterMs: 2000,
       originalDurationMs: 20000,
     });
-    vi.mocked(api.finalize).mockResolvedValue({ outputPath: '/output/clip.mp4', durationMs: 20000 });
 
-    const { getByText, getByTestId, queryByTestId } = render(<EditorPanel job={BASE_JOB} />);
+    const { getByText, getByTestId } = render(<EditorPanel job={BASE_JOB} />);
 
     fireEvent.click(getByTestId('cut-button'));
 
@@ -285,16 +284,13 @@ describe('EditorPanel', () => {
       expect(getByText('Preparando corte...')).toBeTruthy();
     });
 
-    // After prepare+finalize, should call finalize with offset=0
+    // After prepare, SyncEditor should appear (user can preview and adjust audio offset)
     await waitFor(() => {
-      expect(api.finalize).toHaveBeenCalledWith(expect.objectContaining({
-        audioOffsetMs: 0,
-        jobId: 'job-1',
-      }));
+      expect(getByTestId('sync-editor')).toBeTruthy();
     });
 
-    // SyncEditor should NOT appear (finalize was automatic)
-    expect(queryByTestId('sync-editor')).toBeNull();
+    // Finalize should NOT be called automatically — user must click "Exportar" in SyncEditor
+    expect(api.finalize).not.toHaveBeenCalled();
   });
 
   it('shows preparing label with time range in Cortes tab', async () => {
@@ -468,7 +464,7 @@ describe('EditorPanel', () => {
     });
   });
 
-  it('calls downloadFile after successful cut', async () => {
+  it('does NOT auto-download after prepare — waits for user to export via SyncEditor', async () => {
     const { api } = await import('../services/api');
     const { downloadFile } = await import('../utils/downloadFile');
     vi.mocked(api.prepare).mockResolvedValue({
@@ -477,17 +473,18 @@ describe('EditorPanel', () => {
       paddingAfterMs: 2000,
       originalDurationMs: 20000,
     });
-    vi.mocked(api.finalize).mockResolvedValue({ outputPath: '/output/final-clip.mp4', durationMs: 20000 });
 
     const { getByTestId } = render(<EditorPanel job={BASE_JOB} />);
 
     fireEvent.click(getByTestId('cut-button'));
 
+    // Wait for SyncEditor to appear
     await waitFor(() => {
-      expect(downloadFile).toHaveBeenCalledWith(
-        expect.stringContaining('/stream?path='),
-        'final-clip.mp4',
-      );
+      expect(getByTestId('sync-editor')).toBeTruthy();
     });
+
+    // Download should NOT have been triggered — user needs to click "Exportar" first
+    expect(downloadFile).not.toHaveBeenCalled();
+    expect(api.finalize).not.toHaveBeenCalled();
   });
 });
