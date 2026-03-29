@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
-import { YouTubePlayer } from '../player/YouTubePlayer';
+import { PlayerView } from '../player/PlayerView';
 import { Timeline } from '../timeline/Timeline';
 import { CutPanel, type CutMode } from './CutPanel';
 import { TranscriptList } from '../transcript/TranscriptList';
 import { ClipSuggestions } from './ClipSuggestions';
 import { SyncEditor } from './SyncEditor';
 import { CutsTab } from './CutsTab';
-import { useYouTubePlayer } from '../../hooks/useYouTubePlayer';
+import { usePlayer } from '../../hooks/usePlayer';
 import { useCutHandles } from '../../hooks/useCutHandles';
 import { useJobs } from '../../contexts/JobsContext';
 import { api } from '../../services/api';
@@ -52,9 +52,8 @@ export function EditorPanel({ job }: EditorPanelProps) {
 
   const segments: TranscriptSegment[] = job.transcript ?? [];
 
-  const videoId = job.source.videoId ?? '';
-  const { containerRef, currentTimeMs, durationMs, isPlaying, ready, seek } =
-    useYouTubePlayer(videoId);
+  const { containerRef, currentTimeMs, durationMs, isPlaying, ready, seek, type: playerType } =
+    usePlayer(job.source);
 
   const { startMs, endMs, setStartMs, setEndMs, setRange, reset } = useCutHandles(durationMs);
 
@@ -249,7 +248,8 @@ export function EditorPanel({ job }: EditorPanelProps) {
       <div className={`flex-1 min-h-0 flex flex-col lg:flex-row gap-3 p-3 overflow-hidden ${activeTab !== 'recortar' ? 'hidden' : ''}`}>
         {/* Left column: player + timeline + controls */}
         <div className="flex-1 min-w-0 min-h-0 flex flex-col gap-3 overflow-y-auto">
-          <YouTubePlayer
+          <PlayerView
+            type={playerType}
             containerRef={containerRef}
             ready={ready}
             currentTimeMs={currentTimeMs}

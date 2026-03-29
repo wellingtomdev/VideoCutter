@@ -75,6 +75,9 @@ export function useYouTubePlayer(videoId: string) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
+    // Skip initialization when there is no videoId (e.g. local file mode)
+    if (!videoId) return;
+
     let cancelled = false;
 
     const init = async () => {
