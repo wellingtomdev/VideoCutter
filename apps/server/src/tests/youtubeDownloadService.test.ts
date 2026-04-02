@@ -209,7 +209,9 @@ describe('cutYoutubeVideo — error handling', () => {
   });
 
   it('wraps yt-dlp errors with context message', async () => {
-    mockYtdlExec.mockRejectedValueOnce(new Error('Unable to extract video data'));
+    // All yt-dlp calls must fail (separate streams + muxed fallback)
+    const err = new Error('Unable to extract video data');
+    mockYtdlExec.mockRejectedValueOnce(err).mockRejectedValueOnce(err).mockRejectedValueOnce(err);
     await expect(
       cutYoutubeVideo({ youtubeUrl: YT_URL, startMs: 0, endMs: 5000, outputDir: OUT_DIR })
     ).rejects.toThrow('YouTube cut failed');

@@ -70,6 +70,8 @@ export async function downloadStream(
     noWarnings: true,
     // Tell yt-dlp where to find ffmpeg (needed for post-processing / muxing)
     ffmpegLocation: ffmpegDir,
+    // Node.js runtime needed for YouTube JS challenge solving
+    jsRuntimes: 'node',
   });
 }
 
@@ -107,34 +109,55 @@ export async function cutYoutubeVideo({
 
   const videoBase = makeTmpBase() + '_v';
   const audioBase = makeTmpBase() + '_a';
+  const muxedBase = makeTmpBase() + '_muxed';
 
   try {
-    // Download best video-only and audio-only streams in parallel.
-    // YouTube serves HD video (1080p+) as separate DASH streams; yt-dlp picks
-    // the best available for each and downloads only the requested section.
-    await Promise.all([
-      downloadStream(
+    // Try downloading separate video + audio streams (best quality).
+    // YouTube may not serve separate DASH streams due to bot-detection,
+    // in which case we fall back to a single muxed stream.
+    let useMuxedFallback = false;
+
+    try {
+      await Promise.all([
+        downloadStream(
+          youtubeUrl,
+          'bestvideo[vcodec^=avc1]/bestvideo[ext=webm]/bestvideo',
+          videoBase,
+          section,
+        ),
+        downloadStream(
+          youtubeUrl,
+          'bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio',
+          audioBase,
+          section,
+        ),
+      ]);
+      // Verify both files were created
+      findTempFile(videoBase);
+      findTempFile(audioBase);
+    } catch {
+      useMuxedFallback = true;
+    }
+
+    if (useMuxedFallback) {
+      // Fallback: download best muxed stream (video+audio together).
+      // Format selector uses * to include muxed formats.
+      await downloadStream(
         youtubeUrl,
-        'bestvideo[vcodec^=avc1]/bestvideo[ext=webm]/bestvideo',
-        videoBase,
+        'bestvideo*+bestaudio*/best',
+        muxedBase,
         section,
-      ),
-      downloadStream(
-        youtubeUrl,
-        'bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio',
-        audioBase,
-        section,
-      ),
-    ]);
+      );
+
+      const muxedFile = findTempFile(muxedBase);
+      return await trimSingle(muxedFile, durationSec, outputPath, endMs - startMs);
+    }
 
     const videoFile = findTempFile(videoBase);
     const audioFile = findTempFile(audioBase);
 
     // Merge video + audio with ffmpeg.
-    // NOTE: yt-dlp uses its own internal ffmpeg call for --download-sections and
-    // re-indexes the output timestamps to start at 0. We must NOT seek again;
-    // the downloaded files already start near the requested position.
-    // We just apply -t durationSec to cap the output at the correct duration.
+    // NOTE: yt-dlp re-indexes timestamps to 0. We just apply -t to cap duration.
     return await mergeStreams(
       videoFile,
       audioFile,
@@ -149,15 +172,42 @@ export async function cutYoutubeVideo({
     }
     throw new Error(`YouTube cut failed: ${err?.message ?? err}`);
   } finally {
-    // Clean up temp files (video and audio bases)
+    // Clean up temp files
     const tmpDir = os.tmpdir();
-    for (const base of [path.basename(videoBase), path.basename(audioBase)]) {
+    for (const base of [path.basename(videoBase), path.basename(audioBase), path.basename(muxedBase)]) {
       try {
         const files = fs.readdirSync(tmpDir).filter((f) => f.startsWith(base + '.'));
         for (const f of files) fs.unlinkSync(path.join(tmpDir, f));
       } catch {}
     }
   }
+}
+
+// ── ffmpeg trim (single muxed file) ──────────────────────────────────────────
+
+/**
+ * Trim a single muxed file to the exact duration.
+ * Used when yt-dlp downloaded a muxed stream (video+audio together).
+ */
+function trimSingle(
+  inputPath: string,
+  durationSec: number,
+  outputPath: string,
+  durationMs: number,
+): Promise<{ outputPath: string; durationMs: number }> {
+  return new Promise((resolve, reject) => {
+    ffmpeg()
+      .input(inputPath)
+      .outputOptions([
+        `-t ${durationSec}`,
+        '-c:v copy',
+        '-c:a copy',
+      ])
+      .output(outputPath)
+      .on('end',   ()    => resolve({ outputPath, durationMs }))
+      .on('error', (err) => reject(new Error(`FFmpeg error: ${err.message}`)))
+      .run();
+  });
 }
 
 // ── ffmpeg merge ──────────────────────────────────────────────────────────────

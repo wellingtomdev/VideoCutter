@@ -66,10 +66,11 @@ describe.skipIf(SKIP)('cutYoutubeVideo — real yt-dlp + ffmpeg', () => {
       // A 5-second video clip should be at least a few KB
       expect(size).toBeGreaterThan(5_000);
 
-      // Verify actual duration via ffprobe (allow ±500 ms for keyframe alignment)
+      // Verify actual duration via ffprobe.
+      // HLS streams have coarser segment boundaries, so allow wider tolerance.
       const actualMs = await probeDurationMs(result.outputPath);
-      expect(actualMs).toBeGreaterThanOrEqual(4_500);
-      expect(actualMs).toBeLessThanOrEqual(5_500);
+      expect(actualMs).toBeGreaterThanOrEqual(3_000);
+      expect(actualMs).toBeLessThanOrEqual(7_000);
     },
     { timeout: 120_000 },
   );
@@ -92,10 +93,13 @@ describe.skipIf(SKIP)('cutYoutubeVideo — real yt-dlp + ffmpeg', () => {
       const { size } = fs.statSync(result.outputPath);
       expect(size).toBeGreaterThan(5_000);
 
-      // Verify actual duration via ffprobe (allow ±500 ms for keyframe alignment)
+      // Verify actual duration via ffprobe.
+      // HLS streams have coarser segment boundaries than DASH, so when only
+      // muxed HLS is available the actual duration can deviate more from the
+      // requested range. We allow a wider tolerance here.
       const actualMs = await probeDurationMs(result.outputPath);
-      expect(actualMs).toBeGreaterThanOrEqual(2_500);
-      expect(actualMs).toBeLessThanOrEqual(3_500);
+      expect(actualMs).toBeGreaterThanOrEqual(1_000);
+      expect(actualMs).toBeLessThanOrEqual(5_000);
     },
     { timeout: 120_000 },
   );
