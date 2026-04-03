@@ -9,6 +9,9 @@ interface TranscriptListProps {
   onSeek: (ms: number) => void;
   onSetStart: (ms: number) => void;
   onSetEnd: (ms: number) => void;
+  onRetryTranscript?: () => void;
+  transcriptLoading?: boolean;
+  transcriptError?: string | null;
 }
 
 function formatTime(ms: number): string {
@@ -42,6 +45,9 @@ export function TranscriptList({
   onSeek,
   onSetStart,
   onSetEnd,
+  onRetryTranscript,
+  transcriptLoading,
+  transcriptError,
 }: TranscriptListProps) {
   const activeRef = useRef<HTMLDivElement>(null);
   const matchRef = useRef<HTMLDivElement>(null);
@@ -107,7 +113,32 @@ export function TranscriptList({
       <div className="bg-gray-800 rounded-lg p-4 flex flex-col h-full min-h-48">
         <h3 className="text-sm font-semibold text-gray-300 mb-3">Transcrição</h3>
         <div className="flex-1 flex items-center justify-center">
-          <p className="text-gray-500 text-sm text-center">Sem Transcrição disponivel</p>
+          <div className="text-center space-y-2">
+            {transcriptLoading ? (
+              <div className="flex items-center justify-center gap-2">
+                <svg className="animate-spin w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z" />
+                </svg>
+                <p className="text-gray-400 text-sm">Buscando transcrição...</p>
+              </div>
+            ) : (
+              <>
+                <p className="text-gray-500 text-sm">Sem transcrição disponível</p>
+                {transcriptError && (
+                  <p className="text-xs text-red-400/70">{transcriptError}</p>
+                )}
+                {onRetryTranscript && (
+                  <button
+                    onClick={onRetryTranscript}
+                    className="text-xs text-blue-400 hover:text-blue-300 underline transition-colors"
+                  >
+                    Buscar transcrição do YouTube
+                  </button>
+                )}
+              </>
+            )}
+          </div>
         </div>
       </div>
     );

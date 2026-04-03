@@ -47,6 +47,8 @@ vi.mock('../services/api', () => ({
     finalize: vi.fn(),
     streamUrl: (path: string) => `http://localhost:3001/stream?path=${encodeURIComponent(path)}`,
     openFileDialog: vi.fn(),
+    subscribePrepareProgress: vi.fn().mockReturnValue(() => {}),
+    youtubeTranscript: vi.fn().mockResolvedValue([]),
   },
 }));
 
@@ -314,7 +316,7 @@ describe('EditorPanel', () => {
         startMs: 0,
         endMs: 60000,
         jobId: 'job-1',
-      });
+      }, expect.any(AbortSignal));
     });
   });
 
@@ -555,7 +557,7 @@ describe('EditorPanel', () => {
           startMs: 0,
           endMs: 60000,
           jobId: 'job-2',
-        });
+        }, expect.any(AbortSignal));
       });
     });
 

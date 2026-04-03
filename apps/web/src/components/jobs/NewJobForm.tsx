@@ -34,6 +34,7 @@ export function NewJobForm({ onCreated }: NewJobFormProps) {
   const [localPath, setLocalPath] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [transcriptWarning, setTranscriptWarning] = useState<string | null>(null);
 
   const TAB = 'px-2 py-1 text-xs rounded transition-colors font-medium';
   const ACTIVE = 'bg-gray-600 text-white';
@@ -51,6 +52,7 @@ export function NewJobForm({ onCreated }: NewJobFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
+    setTranscriptWarning(null);
     setLoading(true);
 
     try {
@@ -68,7 +70,7 @@ export function NewJobForm({ onCreated }: NewJobFormProps) {
         try {
           transcript = await api.youtubeTranscript(youtubeUrl.trim());
         } catch {
-          // Transcript is optional
+          setTranscriptWarning('Transcrição não disponível. Você pode tentar novamente no editor.');
         }
 
         await createJob({
@@ -137,6 +139,10 @@ export function NewJobForm({ onCreated }: NewJobFormProps) {
 
       {error && (
         <p className="text-[11px] text-red-400">{error}</p>
+      )}
+
+      {transcriptWarning && (
+        <p className="text-[11px] text-yellow-400">{transcriptWarning}</p>
       )}
 
       <button

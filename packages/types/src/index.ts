@@ -78,6 +78,18 @@ export interface SuggestClipsResponse {
   suggestions: ClipSuggestion[];
 }
 
+// ── Prepare Progress ───────────────────────────────────────────────────────
+
+export type PreparePhase = 'downloading' | 'merging' | 'done' | 'error';
+
+export interface PrepareProgress {
+  phase: PreparePhase;
+  progress: number;       // 0-100
+  message: string;
+  done: boolean;
+  error?: string;
+}
+
 // ── Job System ──────────────────────────────────────────────────────────────
 
 export type JobStatus = 'setup' | 'ready' | 'preparing' | 'cutting' | 'done' | 'error';
@@ -140,6 +152,7 @@ export interface UpdateJobRequest {
   output?: JobOutput;
   prepare?: PrepareResult | null;
   suggestions?: ClipSuggestion[];
+  transcript?: TranscriptSegment[];
   newCutEntry?: Omit<JobCutEntry, 'id' | 'createdAt'>;
   removeCutId?: string;
   error?: string;

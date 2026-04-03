@@ -125,6 +125,36 @@ describe.skipIf(SKIP)('cutYoutubeVideo — real yt-dlp + ffmpeg', () => {
   );
 
   it(
+    'reports real download progress via onProgress callback',
+    async () => {
+      const phases: string[] = [];
+      const messages: string[] = [];
+      const result = await cutYoutubeVideo({
+        youtubeUrl: YT_URL,
+        startMs: 0,
+        endMs: 3000,
+        outputDir: os.tmpdir(),
+        onProgress: (phase, _progress, message) => {
+          phases.push(phase);
+          messages.push(message);
+        },
+      });
+
+      filesToClean.push(result.outputPath);
+
+      // Should have gone through downloading → merging → done
+      expect(phases).toContain('downloading');
+      expect(phases).toContain('done');
+      // Should have received real percentage messages (video/audio or fallback)
+      const downloadMsgs = messages.filter(m =>
+        m.includes('Vídeo') || m.includes('Áudio') || m.includes('Baixando'),
+      );
+      expect(downloadMsgs.length).toBeGreaterThan(0);
+    },
+    { timeout: 120_000 },
+  );
+
+  it(
     'rejects invalid YouTube URLs',
     async () => {
       await expect(

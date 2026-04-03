@@ -84,8 +84,8 @@ export async function listJobs(): Promise<Job[]> {
 export async function updateJob(id: string, data: UpdateJobRequest): Promise<Job> {
   const existing = readMetadata(id);
 
-  // Separate prepare, newCutEntry, removeCutId from rest to handle specially
-  const { prepare: prepareValue, newCutEntry, removeCutId, ...rest } = data;
+  // Separate prepare, newCutEntry, removeCutId, transcript from rest to handle specially
+  const { prepare: prepareValue, newCutEntry, removeCutId, transcript, ...rest } = data;
 
   const updated: Job = {
     ...existing,
@@ -93,7 +93,7 @@ export async function updateJob(id: string, data: UpdateJobRequest): Promise<Job
     id: existing.id,
     createdAt: existing.createdAt,
     source: existing.source,
-    transcript: existing.transcript,
+    transcript: transcript ?? existing.transcript,
     cuts: existing.cuts,
     updatedAt: new Date().toISOString(),
   };

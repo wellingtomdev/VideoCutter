@@ -52,6 +52,54 @@ export function findTempFile(base: string): string {
 }
 
 /**
+ * Progress info from yt-dlp / ffmpeg output.
+ *
+ * With --download-sections, yt-dlp uses ffmpeg internally to cut streams.
+ * There are NO intermediate [download] XX% lines — only ffmpeg progress on
+ * stderr like: "frame= 298 fps= 56 size= 512kB time=00:00:09.87 speed=1.85x"
+ *
+ * We parse both formats so it works regardless of yt-dlp's download mode.
+ */
+export interface DownloadInfo {
+  percent: number;
+  size?: string;    // e.g. "512kB", "~120.50MiB"
+  speed?: string;   // e.g. "1.85x", "2.50MiB/s"
+  time?: string;    // e.g. "00:00:09.87"
+}
+
+/** Parse yt-dlp "[download] XX%" line (used when NOT using --download-sections) */
+function parseYtdlpDownloadLine(line: string): DownloadInfo | null {
+  const pctMatch = line.match(/\[download\]\s+([\d.]+)%/);
+  if (!pctMatch) return null;
+
+  const percent = parseFloat(pctMatch[1]);
+  const sizeMatch = line.match(/of\s+(~?[\d.]+\w+)/);
+  const speedMatch = line.match(/at\s+([\d.]+\w+\/s)/);
+
+  return { percent, size: sizeMatch?.[1], speed: speedMatch?.[1] };
+}
+
+/**
+ * Parse ffmpeg progress line from stderr.
+ * Example: "frame= 298 fps= 56 size= 512kB time=00:00:09.87 speed=1.85x"
+ * Returns the time in seconds, size, and speed.
+ */
+function parseFfmpegProgress(line: string): { timeSec: number; size?: string; speed?: string } | null {
+  const timeMatch = line.match(/time=(\d{2}):(\d{2}):(\d{2})\.(\d{2})/);
+  if (!timeMatch) return null;
+
+  const [, h, m, s, cs] = timeMatch;
+  const timeSec = parseInt(h) * 3600 + parseInt(m) * 60 + parseInt(s) + parseInt(cs) / 100;
+
+  const sizeMatch = line.match(/size=\s*([\d.]+\w+)/);
+  const speedMatch = line.match(/speed=\s*([\d.]+x)/);
+
+  return { timeSec, size: sizeMatch?.[1], speed: speedMatch?.[1] };
+}
+
+export type DownloadProgressCallback = (info: DownloadInfo) => void;
+
+/**
  * Invoke yt-dlp to download one stream (video-only or audio-only) for the
  * given time section to a temp file.
  */
@@ -60,9 +108,11 @@ export async function downloadStream(
   format: string,
   outputBase: string,
   section: string,
+  onDownloadProgress?: DownloadProgressCallback,
+  durationSec?: number,
 ): Promise<void> {
   const ffmpegDir = path.dirname(ffmpegInstaller.path);
-  await (youtubedl as any).exec(url, {
+  const proc = (youtubedl as any).exec(url, {
     format,
     output: `${outputBase}.%(ext)s`,
     downloadSections: section,
@@ -72,10 +122,43 @@ export async function downloadStream(
     ffmpegLocation: ffmpegDir,
     // Node.js runtime needed for YouTube JS challenge solving
     jsRuntimes: 'node',
+    // Force progress output even when not a TTY, use newlines instead of \r
+    progress: true,
+    newline: true,
   });
+
+  if (onDownloadProgress) {
+    const handleChunk = (chunk: Buffer) => {
+      const lines = chunk.toString().split(/[\r\n]+/);
+      for (const line of lines) {
+        // Try yt-dlp [download] format first (normal downloads)
+        const dlInfo = parseYtdlpDownloadLine(line);
+        if (dlInfo) { onDownloadProgress(dlInfo); continue; }
+
+        // Try ffmpeg progress format (used with --download-sections)
+        const ffInfo = parseFfmpegProgress(line);
+        if (ffInfo && durationSec && durationSec > 0) {
+          const percent = Math.min(100, (ffInfo.timeSec / durationSec) * 100);
+          onDownloadProgress({
+            percent,
+            size: ffInfo.size,
+            speed: ffInfo.speed,
+            time: `${Math.round(ffInfo.timeSec)}s / ${Math.round(durationSec)}s`,
+          });
+        }
+      }
+    };
+    // ffmpeg progress goes to stderr; yt-dlp download lines go to stdout
+    if (proc.stdout) proc.stdout.on('data', handleChunk);
+    if (proc.stderr) proc.stderr.on('data', handleChunk);
+  }
+
+  await proc;
 }
 
 // ── Main export ───────────────────────────────────────────────────────────────
+
+export type ProgressCallback = (phase: 'downloading' | 'merging' | 'done' | 'error', progress: number, message: string) => void;
 
 export async function cutYoutubeVideo({
   youtubeUrl,
@@ -84,6 +167,7 @@ export async function cutYoutubeVideo({
   outputDir,
   outputName,
   audioOffsetMs,
+  onProgress,
 }: {
   youtubeUrl: string;
   startMs: number;
@@ -91,6 +175,7 @@ export async function cutYoutubeVideo({
   outputDir?: string;
   outputName?: string;
   audioOffsetMs?: number;
+  onProgress?: ProgressCallback;
 }): Promise<{ outputPath: string; durationMs: number }> {
   if (startMs >= endMs) throw new Error('startMs must be less than endMs');
 
@@ -117,6 +202,34 @@ export async function cutYoutubeVideo({
     // in which case we fall back to a single muxed stream.
     let useMuxedFallback = false;
 
+    // Track download progress for video and audio streams independently.
+    // Combined progress = average of both, mapped to 5–55% range.
+    let videoInfo: DownloadInfo = { percent: 0 };
+    let audioInfo: DownloadInfo = { percent: 0 };
+    const reportDownloadProgress = () => {
+      const avg = (videoInfo.percent + audioInfo.percent) / 2;
+      const mapped = Math.round(5 + avg * 0.5); // 5–55%
+
+      // Build detailed message with speed/ETA from the stream that's still downloading
+      const active = videoInfo.percent < 100 ? videoInfo : audioInfo;
+      const parts: string[] = [
+        `Vídeo ${Math.round(videoInfo.percent)}%`,
+        `Áudio ${Math.round(audioInfo.percent)}%`,
+      ];
+      const detail: string[] = [];
+      if (active.size) detail.push(active.size);
+      if (active.speed) detail.push(active.speed);
+      if (active.eta) detail.push(`ETA ${active.eta}`);
+
+      const msg = detail.length > 0
+        ? `${parts.join(' · ')}  —  ${detail.join(' · ')}`
+        : parts.join(' · ');
+
+      onProgress?.('downloading', mapped, msg);
+    };
+
+    onProgress?.('downloading', 5, 'Iniciando download...');
+
     try {
       await Promise.all([
         downloadStream(
@@ -124,12 +237,16 @@ export async function cutYoutubeVideo({
           'bestvideo[vcodec^=avc1]/bestvideo[ext=webm]/bestvideo',
           videoBase,
           section,
+          (info) => { videoInfo = info; reportDownloadProgress(); },
+          durationSec,
         ),
         downloadStream(
           youtubeUrl,
           'bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio',
           audioBase,
           section,
+          (info) => { audioInfo = info; reportDownloadProgress(); },
+          durationSec,
         ),
       ]);
       // Verify both files were created
@@ -140,6 +257,7 @@ export async function cutYoutubeVideo({
     }
 
     if (useMuxedFallback) {
+      onProgress?.('downloading', 10, 'Baixando stream muxado (fallback)...');
       // Fallback: download best muxed stream (video+audio together).
       // Format selector uses * to include muxed formats.
       await downloadStream(
@@ -147,18 +265,32 @@ export async function cutYoutubeVideo({
         'bestvideo*+bestaudio*/best',
         muxedBase,
         section,
+        (info) => {
+          const mapped = Math.round(5 + info.percent * 0.55); // 5–60%
+          const detail: string[] = [`${Math.round(info.percent)}%`];
+          if (info.size) detail.push(info.size);
+          if (info.speed) detail.push(info.speed);
+          if (info.eta) detail.push(`ETA ${info.eta}`);
+          onProgress?.('downloading', mapped, `Baixando: ${detail.join(' · ')}`);
+        },
+        durationSec,
       );
 
+      onProgress?.('merging', 70, 'Processando vídeo...');
       const muxedFile = findTempFile(muxedBase);
-      return await trimSingle(muxedFile, durationSec, outputPath, endMs - startMs);
+      const result = await trimSingle(muxedFile, durationSec, outputPath, endMs - startMs);
+      onProgress?.('done', 100, 'Concluído!');
+      return result;
     }
+
+    onProgress?.('merging', 60, 'Mesclando streams de vídeo e áudio...');
 
     const videoFile = findTempFile(videoBase);
     const audioFile = findTempFile(audioBase);
 
     // Merge video + audio with ffmpeg.
     // NOTE: yt-dlp re-indexes timestamps to 0. We just apply -t to cap duration.
-    return await mergeStreams(
+    const result = await mergeStreams(
       videoFile,
       audioFile,
       durationSec,
@@ -166,6 +298,8 @@ export async function cutYoutubeVideo({
       endMs - startMs,
       audioOffsetMs ?? 0,
     );
+    onProgress?.('done', 100, 'Concluído!');
+    return result;
   } catch (err: any) {
     if (fs.existsSync(outputPath)) {
       try { fs.unlinkSync(outputPath); } catch {}

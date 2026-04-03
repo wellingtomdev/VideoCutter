@@ -206,6 +206,39 @@ describe('jobStore', () => {
     });
   });
 
+  describe('updateJob — transcript', () => {
+    it('preserves transcript when not provided in update', async () => {
+      const transcript = [
+        { id: 0, startMs: 0, endMs: 5000, text: 'Hello' },
+        { id: 1, startMs: 5000, endMs: 10000, text: 'World' },
+      ];
+      const created = await createJob({
+        source: { type: 'youtube', youtubeUrl: 'https://youtube.com/watch?v=abc', videoId: 'abc' },
+        transcript,
+      });
+
+      const updated = await updateJob(created.id, { status: 'ready' });
+      expect(updated.transcript).toEqual(transcript);
+    });
+
+    it('updates transcript when provided in update', async () => {
+      const created = await createJob({
+        source: { type: 'youtube', youtubeUrl: 'https://youtube.com/watch?v=abc', videoId: 'abc' },
+      });
+      expect(created.transcript).toBeUndefined();
+
+      const transcript = [
+        { id: 0, startMs: 0, endMs: 3000, text: 'New transcript' },
+      ];
+      const updated = await updateJob(created.id, { transcript });
+      expect(updated.transcript).toEqual(transcript);
+
+      // Verify on disk
+      const fromDisk = await getJob(created.id);
+      expect(fromDisk.transcript).toEqual(transcript);
+    });
+  });
+
   describe('deleteJob', () => {
     it('removes the job folder recursively', async () => {
       const job = await createJob({ source: { type: 'local', path: '/test.mp4' } });

@@ -7,7 +7,7 @@ import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 import { cutVideo } from '../services/ffmpegService';
 import { cutYoutubeVideo } from '../services/youtubeDownloadService';
 import { updateJob, getJob, getJobDir } from '../services/jobStore';
-import { setProgress, getProgress, setLastPreparedPath, getLastPreparedPath } from '../services/progressStore';
+import { setProgress, getProgress, setLastPreparedPath, getLastPreparedPath, setPrepareProgress, subscribePrepareProgress, clearPrepareProgress } from '../services/progressStore';
 import { formatMsToTime, formatMsToFilename } from '../utils/format';
 import { ensureDir, safeUnlink } from '../utils/fs';
 import { config } from '../config';
@@ -125,13 +125,21 @@ export async function handlePrepare(req: Request, res: Response): Promise<void> 
     let result: { outputPath: string };
 
     if (youtubeUrl) {
+      const progressJobId = jobId ?? `prepare_${Date.now()}`;
+      setPrepareProgress(progressJobId, { phase: 'downloading', progress: 0, message: 'Iniciando download...', done: false });
+
       result = await cutYoutubeVideo({
         youtubeUrl,
         startMs: actualStart,
         endMs: actualEnd,
         outputDir,
         outputName,
+        onProgress: (phase, progress, message) => {
+          setPrepareProgress(progressJobId, { phase, progress, message, done: phase === 'done' });
+        },
       });
+
+      clearPrepareProgress(progressJobId);
     } else {
       result = await cutVideo({
         videoPath: videoPath!,
@@ -288,4 +296,30 @@ export function handleProgress(req: Request, res: Response): void {
 
   res.write(`data: ${JSON.stringify(job)}\n\n`);
   res.end();
+}
+
+export function handlePrepareProgress(req: Request, res: Response): void {
+  const { jobId } = req.params;
+
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+
+  let ended = false;
+  let unsubscribe: (() => void) | null = null;
+
+  unsubscribe = subscribePrepareProgress(jobId, (data) => {
+    if (ended) return;
+    res.write(`data: ${JSON.stringify(data)}\n\n`);
+    if (data.done || data.phase === 'error') {
+      ended = true;
+      unsubscribe?.();
+      res.end();
+    }
+  });
+
+  req.on('close', () => {
+    ended = true;
+    unsubscribe?.();
+  });
 }

@@ -67,7 +67,6 @@ export function CutPanel({
   };
 
   const canCut =
-    cutState !== 'preparing' &&
     durationMs > 0 &&
     (cutMode === 'youtube' || !!localVideoPath);
 

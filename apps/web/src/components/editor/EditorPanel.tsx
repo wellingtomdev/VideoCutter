@@ -11,7 +11,7 @@ import { useCutHandles } from '../../hooks/useCutHandles';
 import { useJobs } from '../../contexts/JobsContext';
 import { api } from '../../services/api';
 import { downloadFile } from '../../utils/downloadFile';
-import type { Job, JobCutEntry, PrepareResult, TranscriptSegment } from '../../types';
+import type { Job, JobCutEntry, PrepareResult, PrepareProgress, TranscriptSegment } from '../../types';
 
 interface EditorPanelProps {
   job: Job;
@@ -48,9 +48,28 @@ export function EditorPanel({ job }: EditorPanelProps) {
   const [cutError, setCutError] = useState<string | null>(null);
   const [prepareResult, setPrepareResult] = useState<PrepareResult | null>(null);
   const [preparingLabel, setPreparingLabel] = useState<string | null>(null);
+  const [prepareProgress, setPrepareProgress] = useState<PrepareProgress | null>(null);
   const [selectedCutId, setSelectedCutId] = useState<string | null>(null);
+  const prepareAbortRef = useRef<AbortController | null>(null);
 
   const segments: TranscriptSegment[] = job.transcript ?? [];
+  const [transcriptLoading, setTranscriptLoading] = useState(false);
+  const [transcriptError, setTranscriptError] = useState<string | null>(null);
+
+  const handleRetryTranscript = async () => {
+    if (job.source.type !== 'youtube' || !job.source.youtubeUrl) return;
+    setTranscriptLoading(true);
+    setTranscriptError(null);
+    try {
+      const transcript = await api.youtubeTranscript(job.source.youtubeUrl);
+      await updateJob(job.id, { transcript });
+      await refreshJob(job.id);
+    } catch (err) {
+      setTranscriptError(err instanceof Error ? err.message : 'Falha ao buscar transcrição');
+    } finally {
+      setTranscriptLoading(false);
+    }
+  };
 
   const { containerRef, currentTimeMs, durationMs, isPlaying, ready, seek, type: playerType } =
     usePlayer(job.source);
@@ -83,13 +102,18 @@ export function EditorPanel({ job }: EditorPanelProps) {
 
   // Reset state when job changes — restore prepareResult if backend has one
   useEffect(() => {
-    setCutState('idle');
+    // Abort any in-flight prepare from the previous job
+    prepareAbortRef.current?.abort();
+    prepareAbortRef.current = null;
+
     setCutError(null);
-    setPreparingLabel(null);
     setSelectedCutId(null);
     setLocalVideoPath(job.source.path ?? null);
     setCutMode(job.source.type === 'youtube' ? 'youtube' : 'local');
     setReExportOffsetMs(undefined);
+    setCutState('idle');
+    setPreparingLabel(null);
+    setPrepareProgress(null);
 
     if (job.prepare) {
       setPrepareResult(job.prepare);
@@ -98,7 +122,43 @@ export function EditorPanel({ job }: EditorPanelProps) {
       setPrepareResult(null);
       setActiveTab('recortar');
     }
+
+    // If the job is stuck in 'preparing' from a previous session (server restart),
+    // reset it back to setup so the user isn't stuck
+    if (job.status === 'preparing' && !job.prepare) {
+      updateJob(job.id, { status: 'setup' }).catch(() => {});
+    }
   }, [job.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // SSE progress subscription — only while cutState is 'preparing'
+  useEffect(() => {
+    if (cutState !== 'preparing' || job.source.type !== 'youtube') return;
+
+    const unsub = api.subscribePrepareProgress(job.id, (data) => {
+      setPrepareProgress(data);
+    });
+
+    return () => unsub();
+  }, [cutState, job.id, job.source.type]);
+
+  const handleCancelPrepare = async () => {
+    // Abort the in-flight HTTP request
+    prepareAbortRef.current?.abort();
+    prepareAbortRef.current = null;
+
+    // Reset local state
+    setCutState('idle');
+    setCutError(null);
+    setPreparingLabel(null);
+    setPrepareProgress(null);
+    setActiveTab('recortar');
+
+    // Reset job status on backend
+    try {
+      const hasExistingCuts = (job.cuts?.length ?? 0) > 0;
+      await updateJob(job.id, { status: hasExistingCuts ? 'ready' : 'setup' });
+    } catch { /* ignore */ }
+  };
 
   const handleSelectLocalFile = async () => {
     try {
@@ -110,10 +170,18 @@ export function EditorPanel({ job }: EditorPanelProps) {
   };
 
   const handleCut = async () => {
+    // Abort any previous in-flight prepare
+    prepareAbortRef.current?.abort();
+    const abortController = new AbortController();
+    prepareAbortRef.current = abortController;
+
     setCutState('preparing');
     setCutError(null);
+    setPrepareProgress(null);
     setPreparingLabel(`${formatMs(startMs)} → ${formatMs(endMs)}`);
     setActiveTab('cortes');
+
+    // SSE subscription is handled by the useEffect that watches cutState === 'preparing'
 
     try {
       await updateJob(job.id, { status: 'preparing', cut: { startMs, endMs, audioOffsetMs: 0 } });
@@ -122,16 +190,24 @@ export function EditorPanel({ job }: EditorPanelProps) {
         ? { youtubeUrl: job.source.youtubeUrl!, startMs, endMs, jobId: job.id }
         : { videoPath: localVideoPath!, startMs, endMs, jobId: job.id };
 
-      const result = await api.prepare(req);
+      const result = await api.prepare(req, abortController.signal);
+
+      // If this prepare was aborted (user cancelled or started a new one), ignore the result
+      if (abortController.signal.aborted) return;
 
       // Show SyncEditor so user can preview and adjust audio offset before finalizing
       setPrepareResult(result);
       setCutState('idle');
       setPreparingLabel(null);
+      setPrepareProgress(null);
       await updateJob(job.id, { status: 'ready' });
     } catch (err) {
+      // Ignore abort errors (user cancelled or started a new prepare)
+      if (abortController.signal.aborted) return;
+
       setCutError(err instanceof Error ? err.message : String(err));
       setCutState('error');
+      setPrepareProgress(null);
       try { await updateJob(job.id, { status: 'error', error: String(err) }); } catch {}
     }
   };
@@ -312,13 +388,16 @@ export function EditorPanel({ job }: EditorPanelProps) {
             onSeek={seek}
             onSetStart={setStartMs}
             onSetEnd={setEndMs}
+            onRetryTranscript={job.source.type === 'youtube' ? handleRetryTranscript : undefined}
+            transcriptLoading={transcriptLoading}
+            transcriptError={transcriptError}
           />
         </div>
       </div>
 
       {/* Cortes tab */}
       <div className={`flex-1 min-h-0 flex flex-col overflow-y-auto ${activeTab !== 'cortes' ? 'hidden' : ''}`}>
-        {/* Preparing indicator */}
+        {/* Preparing indicator with progress */}
         {cutState === 'preparing' && (
           <div className="shrink-0 mx-4 mt-4 bg-gray-800 rounded-lg p-4 border border-blue-700/50">
             <div className="flex items-center gap-3">
@@ -326,10 +405,44 @@ export function EditorPanel({ job }: EditorPanelProps) {
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z" />
               </svg>
-              <div>
-                <p className="text-sm text-blue-400 font-medium">Preparando corte...</p>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm text-blue-400 font-medium">
+                    {prepareProgress?.message ?? 'Preparando corte...'}
+                  </p>
+                  <button
+                    onClick={handleCancelPrepare}
+                    className="text-xs text-gray-400 hover:text-red-400 transition-colors px-2 py-1 rounded hover:bg-red-900/30 shrink-0"
+                    title="Cancelar processamento"
+                  >
+                    Cancelar
+                  </button>
+                </div>
                 {preparingLabel && (
                   <p className="text-xs text-gray-400 mt-0.5 font-mono">{preparingLabel}</p>
+                )}
+                {prepareProgress && (
+                  <div className="mt-2">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs text-gray-500">
+                        {prepareProgress.phase === 'downloading' && 'Baixando do YouTube...'}
+                        {prepareProgress.phase === 'merging' && 'Processando vídeo...'}
+                        {prepareProgress.phase === 'done' && 'Concluído!'}
+                      </span>
+                      <span className="text-xs text-gray-500 font-mono">{prepareProgress.progress}%</span>
+                    </div>
+                    <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                      <div
+                        className="bg-blue-500 h-full rounded-full transition-all duration-500 ease-out"
+                        style={{ width: `${prepareProgress.progress}%` }}
+                      />
+                    </div>
+                    {prepareProgress.phase === 'downloading' && prepareProgress.message && (
+                      <p className="text-xs text-gray-500 mt-1.5 font-mono truncate">
+                        {prepareProgress.message}
+                      </p>
+                    )}
+                  </div>
                 )}
               </div>
             </div>
